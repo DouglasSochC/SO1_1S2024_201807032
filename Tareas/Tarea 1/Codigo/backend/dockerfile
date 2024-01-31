@@ -1,0 +1,14 @@
+# Establecer la imagen base
+FROM golang:latest
+
+# Establecer el directorio de trabajo dentro del contenedor
+WORKDIR /app
+
+# Copiar el código fuente al directorio de trabajo
+COPY . .
+
+# Exponer el puerto 8080
+EXPOSE 8080
+
+# Compilar y ejecutar la aplicación
+CMD ["go", "run", "main.go"]
