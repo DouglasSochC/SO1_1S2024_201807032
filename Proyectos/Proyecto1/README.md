@@ -1,4 +1,4 @@
-# XSQL
+# Monitoreo y Señales de Procesos
 
 _Este es el primer proyecto del curso de Sistemas Operativos 1, el cual se tiene como objetivo principal implementar un sistema de monitoreo de recursos del sistema y gestión de procesos. El sistema resultante permitirá obtener información clave sobre el rendimiento del computador, procesos en ejecución y su administración a través de una interfaz amigable._
 
@@ -23,7 +23,11 @@ node --version
 gcc --version
 ```
 
-### ⚙️ Ejecucion
+### ⚙️ Ejecución con Docker
+
+
+
+### ⚙️ Ejecucion para Desarrolo
 
 #### Backend
 
@@ -55,11 +59,13 @@ Dado que los módulos se implementaron en C, se utiliza un Makefile para facilit
 make all
 ```
 
-## 📖 Documentacion
+## 📖 Documentación
 
-### 🔠 Gramatica
+[Comandos de ayuda](referencia_comandos.md)
+
+### 🔠 Titulo 1
 
 abc
 
-### 📑 Reportes
+### 📑 Titulo 2
 abc -->

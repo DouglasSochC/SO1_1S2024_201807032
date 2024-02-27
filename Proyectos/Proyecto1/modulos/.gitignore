@@ -2,8 +2,8 @@
 !.gitignore
 Module.symvers
 modules.order
-modulo_ram.ko
-modulo_ram.mod
-modulo_ram.mod.c
-modulo_ram.mod.o
-modulo_ram.o
+*.ko
+*.mod
+*.mod.c
+*.mod.o
+*.o
