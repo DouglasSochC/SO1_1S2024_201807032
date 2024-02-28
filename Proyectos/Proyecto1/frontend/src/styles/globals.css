@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main-title {
+    font-size: 2em; /* Tamaño del título más grande */
+    margin-bottom: 50px; /* Espacio entre el título y los gráficos */    
+}
