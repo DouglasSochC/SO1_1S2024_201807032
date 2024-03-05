@@ -38,6 +38,8 @@ Dado que los módulos se implementaron en C, se utiliza un Makefile para facilit
 make all
 ```
 
+> Otros comandos make [aqui](referencia_comandos.md)
+
 Dado que el proyecto se ejecuta a través de Docker, unicamente se debe de realizar el siguiente comando en la raiz del proyecto:
 
 ```console
@@ -45,8 +47,6 @@ docker compose up
 ```
 
 ## 📖 Documentación
-
-[Comandos de ayuda](referencia_comandos.md)
 
 ### 🔠 Titulo 1
 

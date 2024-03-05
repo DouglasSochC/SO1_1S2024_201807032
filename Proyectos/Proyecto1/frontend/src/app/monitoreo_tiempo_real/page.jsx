@@ -8,18 +8,27 @@ import './style.css'
 
 export default function MonitoreoTiempoReal() {
 
-  const [data, setData] = useState([0, 0]);
+  const [dataRAM, setDataRAM] = useState([0, 0]);
+  const [dataCPU, setDataCPU] = useState([0, 0]);
 
   useEffect(() => {
-    const actualizarEstadoCadaSegundo = () => {
-      // Generar un nuevo valor aleatorio entre 1 y 100
-      const nuevoValor = Math.floor(Math.random() * 100) + 1;
-
-      // Actualizar el estado con el nuevo valor
-      setData([100 - nuevoValor, nuevoValor]);
+    const actualizarEstadoCadaSegundo = async () => {
+      try {
+        // Se obtienen los datos para la RAM
+        const responseRAM = await fetch('http://localhost:8080/monitoreo-tiempo-real');
+        if (responseRAM.ok) {
+          const jsonData = await responseRAM.json();
+          setDataRAM([jsonData.ram.memoria_porcentaje_uso, 100 - jsonData.ram.memoria_porcentaje_uso]);
+          setDataCPU([jsonData.cpu.cpu_porcentaje, 10000000 - jsonData.cpu.cpu_porcentaje]);
+        } else {
+          console.error('Error al obtener datos del endpoint');
+        }
+      } catch (error) {
+        console.error('Error de red:', error);
+      }
     };
 
-    const intervalId = setInterval(actualizarEstadoCadaSegundo, 1000);
+    const intervalId = setInterval(actualizarEstadoCadaSegundo, 500);
 
     return () => clearInterval(intervalId);
   }, []);
@@ -39,7 +48,7 @@ export default function MonitoreoTiempoReal() {
                 labels: ['En Uso', 'Libre'],
                 datasets: [
                   {
-                    data: data,
+                    data: dataRAM,
                     backgroundColor: [
                       'rgba(255, 99, 132, 0.6)',
                       'rgba(54, 162, 235, 0.6)',
@@ -59,7 +68,7 @@ export default function MonitoreoTiempoReal() {
                 labels: ['En Uso', 'Libre'],
                 datasets: [
                   {
-                    data: data,
+                    data: dataCPU,
                     backgroundColor: [
                       'rgba(255, 99, 132, 0.6)',
                       'rgba(54, 162, 235, 0.6)',
