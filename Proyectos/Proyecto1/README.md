@@ -6,7 +6,7 @@ _Este es el primer proyecto del curso de Sistemas Operativos 1, el cual se tiene
 
 ## 🚀 Comenzando
 
-### 📋 Requerimientos
+### 📋 Requerimientos para desarrollo
 
 * [Golang 1.22.0](https://go.dev/dl/)
 ```console
@@ -23,40 +23,25 @@ node --version
 gcc --version
 ```
 
-### ⚙️ Ejecución con Docker
+### 📋 Requerimientos para la ejecución del proyecto
 
-
-
-### ⚙️ Ejecucion para Desarrolo
-
-#### Backend
-
-Dado que el backend está implementado en Golang, es esencial compilar la aplicación antes de ejecutarla. Por lo tanto, se recomienda ejecutar el siguiente comando en el directorio correspondiente (/backend).
-
+* Docker 25.0.3
 ```console
-go build main.go
+docker -v
 ```
 
-Una vez hecho lo anterior, simplemente se ejecuta el compilado
+### ⚙️ Ejecución 
 
-```console
-./main
-```
-
-#### Frontend
-
-Dado que el frontend está implementado en ReactJS, simplemente se ejecuta el siguiente comando en el directorio correspondiente (/frontend).
-
-```console
-npm start
-```
-
-#### Modulos
-
-Dado que los módulos se implementaron en C, se utiliza un Makefile para facilitar la compilación y gestión del proyecto. Para compilar y gestionar los módulos, se recomienda ejecutar el siguiente comando en el directorio correspondiente
+Dado que los módulos se implementaron en C, se utiliza un Makefile para facilitar la compilación y gestión del proyecto. Para compilar y gestionar los módulos, se recomienda ejecutar el siguiente comando en el directorio 'modulos'
 
 ```console
 make all
+```
+
+Dado que el proyecto se ejecuta a través de Docker, unicamente se debe de realizar el siguiente comando en la raiz del proyecto:
+
+```console
+docker compose up
 ```
 
 ## 📖 Documentación

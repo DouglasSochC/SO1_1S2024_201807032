@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+
+  mysql:
+    image: mysql:latest
+    container_name: 'MySQL'
+    restart: always
+    environment:
+      MYSQL_ROOT_USER: root
+      MYSQL_ROOT_PASSWORD: root_password
+      MYSQL_DATABASE: so1_proyecto1
+    volumes:
+      - volume_mysql:/var/lib/mysql
+      - ./backend/database/init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "3306:3306"
+
+  # backend:
+  #   image: "tarea2_backend"
+  #   container_name: 'BackNodeJS'
+  #   restart: always
+  #   build: ./backend
+  #   ports:
+  #     - "3001:3001"
+  #   depends_on:
+  #     - mysql
+
+  # frontend:
+  #   image: 'tarea2_frontend'
+  #   container_name: 'FrontReactJS'
+  #   build: ./frontend
+  #   ports:
+  #     - '3000:3000'
+  #   depends_on:
+  #     - backend
+
+volumes:
+  volume_mysql:
+    driver: local
