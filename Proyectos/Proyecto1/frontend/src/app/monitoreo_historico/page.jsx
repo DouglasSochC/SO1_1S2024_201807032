@@ -1,28 +1,50 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import Layout from '@/components/Layout/page';
-import { Pie } from 'react-chartjs-2';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import { Line } from 'react-chartjs-2';
 import 'chart.js/auto';
 import './style.css'
 
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
 export default function MonitoreoHistorico() {
 
-  const [data, setData] = useState([0, 0]);
+  const [dataRAM, setDataRAM] = useState([]);
+  const [labelsRAM, setLabelRAM] = useState([]);
+  const [dataCPU, setDataCPU] = useState([]);
+  const [labelsCPU, setLabelCPU] = useState([]);
 
-  useEffect(() => {
-    const actualizarEstadoCadaSegundo = () => {
-      // Generar un nuevo valor aleatorio entre 1 y 100
-      const nuevoValor = Math.floor(Math.random() * 100) + 1;
-
-      // Actualizar el estado con el nuevo valor
-      setData([100 - nuevoValor, nuevoValor]);
-    };
-
-    const intervalId = setInterval(actualizarEstadoCadaSegundo, 1000);
-
-    return () => clearInterval(intervalId);
-  }, []);
+  const fetchData = async () => {
+    try {
+      const response = await fetch('http://localhost:8080/monitoreo-historico');
+      const data = await response.json();
+      setDataRAM(data.ram.data)
+      setLabelRAM(data.ram.labels)
+      setDataCPU(data.cpu.data)
+      setLabelCPU(data.cpu.labels)
+    } catch (error) {
+      console.error('Error al obtener datos de la API:', error);
+    }
+  };
 
   return (<>
     <Layout
@@ -31,47 +53,43 @@ export default function MonitoreoHistorico() {
       <div className="min-h-screen flex flex-col justify-center items-center">
         <div className="m-auto text-center">
           <h1 className="main-title">MONITOREO HISTORICO</h1>
+          <button onClick={fetchData} style={{
+            padding: '10px',
+            backgroundColor: '#4CAF50',
+            color: 'white',
+            border: 'none',
+            borderRadius: '4px',
+            cursor: 'pointer',
+          }}>Actualizar</button>
+          <br />
           <div className="charts-container">
-            <div className="chart">
+            <div className="chart" style={{ width: '600px', height: '400px' }}>
               <h1>Memoria RAM</h1>
-
-              <Pie data={{
-                labels: ['En Uso', 'Libre'],
+              <Line data={{
+                labels: labelsRAM,
                 datasets: [
                   {
-                    data: data,
-                    backgroundColor: [
-                      'rgba(255, 99, 132, 0.6)',
-                      'rgba(54, 162, 235, 0.6)',
-                    ],
-                    borderColor: [
-                      'rgba(255, 99, 132, 1)',
-                      'rgba(54, 162, 235, 1)',
-                    ],
-                    borderWidth: 1,
-                  },
+                    label: '% de Utilizacion',
+                    data: dataRAM,
+                    borderColor: 'rgb(255, 99, 132)',
+                    backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                  }
                 ],
-              }} />
+              }} />;
             </div>
-            <div className="chart">
+            <div className="chart" style={{ width: '600px', height: '400px' }}>
               <h1>CPU</h1>
-              <Pie data={{
-                labels: ['En Uso', 'Libre'],
+              <Line data={{
+                labels: labelsCPU,
                 datasets: [
                   {
-                    data: data,
-                    backgroundColor: [
-                      'rgba(255, 99, 132, 0.6)',
-                      'rgba(54, 162, 235, 0.6)',
-                    ],
-                    borderColor: [
-                      'rgba(255, 99, 132, 1)',
-                      'rgba(54, 162, 235, 1)',
-                    ],
-                    borderWidth: 1,
-                  },
+                    label: '% de Utilizacion',
+                    data: dataCPU,
+                    borderColor: 'rgb(255, 99, 132)',
+                    backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                  }
                 ],
-              }} />
+              }} />;
             </div>
           </div>
         </div>

@@ -20,4 +20,16 @@ func initRoutes() {
 			return
 		}
 	})
+
+	http.HandleFunc("/monitoreo-historico", func(w http.ResponseWriter, r *http.Request) {
+
+		switch r.Method {
+		case http.MethodGet:
+			getObtenerHistoricos(w, r)
+		default:
+			w.WriteHeader(http.StatusMethodNotAllowed)
+			fmt.Fprintf(w, "Method not allowed")
+			return
+		}
+	})
 }

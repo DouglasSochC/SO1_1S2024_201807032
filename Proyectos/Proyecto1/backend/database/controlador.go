@@ -22,6 +22,12 @@ type CPUInfo struct {
 	Procesos json.RawMessage `json:"processes"`
 }
 
+// Estructura para almacenar los historicos
+type Historicos struct {
+	Labels []string `json:"labels"`
+	Data   []string `json:"data"`
+}
+
 func RegistrarHistoricoRAM(db *sql.DB) {
 
 	// Utiliza un modulo para obtener la informacion
@@ -72,4 +78,70 @@ func RegistrarHistoricoCPU(db *sql.DB) {
 		log.Fatal(err)
 		return
 	}
+}
+
+func ObtenerHistoricoRAM(db *sql.DB) ([]byte, error) {
+
+	rows, err := selectHistoricoRAM(db)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	var resultados Historicos
+	for rows.Next() {
+		var campo1, campo2 string
+		err := rows.Scan(&campo1, &campo2)
+		if err != nil {
+			return nil, err
+		}
+
+		resultados.Labels = append(resultados.Labels, campo1)
+		resultados.Data = append(resultados.Data, campo2)
+	}
+
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+
+	// Convierte los resultados a formato JSON
+	jsonResult, err := json.Marshal(resultados)
+	if err != nil {
+		return nil, err
+	}
+
+	return jsonResult, nil
+}
+
+func ObtenerHistoricoCPU(db *sql.DB) ([]byte, error) {
+
+	rows, err := selectHistoricoCPU(db)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	var resultados Historicos
+	for rows.Next() {
+		var campo1, campo2 string
+		err := rows.Scan(&campo1, &campo2)
+		if err != nil {
+			return nil, err
+		}
+
+		resultados.Labels = append(resultados.Labels, campo1)
+		resultados.Data = append(resultados.Data, campo2)
+	}
+
+	if err := rows.Err(); err != nil {
+		return nil, err
+	}
+
+	// Convierte los resultados a formato JSON
+	jsonResult, err := json.Marshal(resultados)
+	if err != nil {
+		return nil, err
+	}
+
+	return jsonResult, nil
 }

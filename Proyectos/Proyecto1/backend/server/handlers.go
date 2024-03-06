@@ -1,8 +1,10 @@
 package server
 
 import (
+	"backend/database"
 	"encoding/json"
 	"fmt"
+	"log"
 	"net/http"
 	"os/exec"
 )
@@ -118,5 +120,37 @@ func getMonitoreoTiempoReal(w http.ResponseWriter, r *http.Request) {
 	// Combinar datos de RAM y CPU en una respuesta JSON
 	responseData := fmt.Sprintf(`{"ram": %s, "cpu": %s}`, ramData, cpuData)
 
+	fmt.Fprintf(w, responseData)
+}
+
+func getObtenerHistoricos(w http.ResponseWriter, r *http.Request) {
+
+	// Configurar el encabezado para indicar que el contenido es JSON
+	w.Header().Set("Content-Type", "application/json")
+	// Permitir solicitudes desde cualquier origen
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+
+	db, err := database.SetupDB()
+	if err != nil {
+		log.Fatal(err)
+	}
+	defer db.Close()
+
+	historicoRAM, err := database.ObtenerHistoricoRAM(db)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	historicoCPU, err := database.ObtenerHistoricoCPU(db)
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusInternalServerError)
+		return
+	}
+
+	// Combinar datos de RAM y CPU en una respuesta JSON
+	responseData := fmt.Sprintf(`{"ram": %s, "cpu": %s}`, historicoRAM, historicoCPU)
+
+	// Escribir el JSON en la respuesta HTTP
 	fmt.Fprintf(w, responseData)
 }

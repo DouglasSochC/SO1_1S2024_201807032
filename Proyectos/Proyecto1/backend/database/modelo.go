@@ -50,28 +50,24 @@ func insertHistoricoCPU(db *sql.DB, cpu_total, porcentaje_utilizacion int) error
 	return nil
 }
 
-// // Función para realizar una operación de SELECT
-// func selectData(db *sql.DB) error {
-// 	selectQuery := "SELECT campo1, campo2 FROM ejemplos"
-// 	rows, err := db.Query(selectQuery)
-// 	if err != nil {
-// 		return err
-// 	}
-// 	defer rows.Close()
+// Función para obtener los ultimos 20 registros del historico de la RAM
+func selectHistoricoRAM(db *sql.DB) (*sql.Rows, error) {
 
-// 	fmt.Println("Resultados de la consulta SELECT:")
-// 	for rows.Next() {
-// 		var campo1, campo2 string
-// 		err := rows.Scan(&campo1, &campo2)
-// 		if err != nil {
-// 			return err
-// 		}
-// 		fmt.Printf("Campo1: %s, Campo2: %s\n", campo1, campo2)
-// 	}
+	selectQuery := "SELECT DATE_FORMAT(hr.FECHA, '%d/%m/%Y %H:%i:%s') AS FECHA_FORMATEADA, hr.PORCENTAJE_UTILIZACION FROM HISTORICO_RAM hr ORDER BY hr.FECHA DESC LIMIT 20"
+	rows, err := db.Query(selectQuery)
+	if err != nil {
+		return nil, err
+	}
+	return rows, nil
+}
 
-// 	if err := rows.Err(); err != nil {
-// 		return err
-// 	}
+// Función para obtener los ultimos 20 registros del historico de la CPU
+func selectHistoricoCPU(db *sql.DB) (*sql.Rows, error) {
 
-// 	return nil
-// }
+	selectQuery := "SELECT DATE_FORMAT(hc.FECHA, '%d/%m/%Y %H:%i:%s') AS FECHA_FORMATEADA, hc.PORCENTAJE_UTILIZACION FROM HISTORICO_CPU hc ORDER BY hc.FECHA DESC LIMIT 20"
+	rows, err := db.Query(selectQuery)
+	if err != nil {
+		return nil, err
+	}
+	return rows, nil
+}
