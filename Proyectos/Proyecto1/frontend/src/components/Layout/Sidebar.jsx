@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { SlHome } from 'react-icons/sl'
-import { BsFillPieChartFill, BsGraphUp } from 'react-icons/bs'
+import { BsFillPieChartFill, BsGraphUp, BsFillDiagram3Fill } from 'react-icons/bs'
 
 import logo from '@/img/logo.svg'
 
@@ -71,6 +71,11 @@ export default function Sidebar({ show, setter }) {
                         name="Monitoreo Historico"
                         route="/monitoreo_historico"
                         icon={<BsGraphUp />}
+                    />
+                    <MenuItem
+                        name="Arbol de un Proceso"
+                        route="/arbol_proceso"
+                        icon={<BsFillDiagram3Fill  />}
                     />
                 </div>
             </div>

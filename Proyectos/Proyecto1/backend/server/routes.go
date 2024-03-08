@@ -32,4 +32,16 @@ func initRoutes() {
 			return
 		}
 	})
+
+	http.HandleFunc("/procesos-actuales", func(w http.ResponseWriter, r *http.Request) {
+
+		switch r.Method {
+		case http.MethodGet:
+			getObtenerProcesosPadre(w, r)
+		default:
+			w.WriteHeader(http.StatusMethodNotAllowed)
+			fmt.Fprintf(w, "Method not allowed")
+			return
+		}
+	})
 }
