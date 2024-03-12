@@ -1,0 +1,24 @@
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button-container button {
+    margin: 0 15px;
+    /* Ajusta el margen entre los botones según tus necesidades */
+}
+
+.charts-container {
+    display: flex;
+    gap: 20px; /* Espacio entre los gráficos */
+}
+
+.chart {
+    flex: 1;
+    text-align: center;
+    margin: 10px;
+}
+
+.chart h2 {
+    margin-bottom: 10px;
+}

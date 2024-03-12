@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { SlHome } from 'react-icons/sl'
-import { BsFillPieChartFill, BsGraphUp, BsFillDiagram3Fill } from 'react-icons/bs'
+import { BsFillPieChartFill, BsGraphUp, BsFillDiagram3Fill, BsFillTerminalFill } from 'react-icons/bs'
 
 import logo from '@/img/logo.svg'
 
@@ -76,6 +76,11 @@ export default function Sidebar({ show, setter }) {
                         name="Arbol de un Proceso"
                         route="/arbol_proceso"
                         icon={<BsFillDiagram3Fill  />}
+                    />
+                    <MenuItem
+                        name="Diagrama de Estados"
+                        route="/diagrama_estados"
+                        icon={<BsFillTerminalFill  />}
                     />
                 </div>
             </div>
