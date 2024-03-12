@@ -19,7 +19,7 @@ export default function MonitoreoTiempoReal() {
         if (responseRAM.ok) {
           const jsonData = await responseRAM.json();
           setDataRAM([jsonData.ram.memoria_porcentaje_uso, 100 - jsonData.ram.memoria_porcentaje_uso]);
-          setDataCPU([jsonData.cpu.cpu_porcentaje, 10000000 - jsonData.cpu.cpu_porcentaje]);
+          setDataCPU([jsonData.cpu.cpu_porcentaje, 100 - jsonData.cpu.cpu_porcentaje]);
         } else {
           console.error('Error al obtener datos del endpoint');
         }

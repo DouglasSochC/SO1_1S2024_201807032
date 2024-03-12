@@ -6,6 +6,9 @@
 #include <linux/fs.h>
 #include <linux/sched.h>
 #include <linux/mm.h> // get_mm_rss()
+#include <linux/tick.h>
+#include <linux/jiffies.h>
+#include <linux/kernel.h>
 
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("Douglas Soch");
@@ -25,6 +28,15 @@ static int escribir_a_proc(struct seq_file *file_proc, void *v)
     unsigned long rss;
     unsigned long total_ram_pages;
 
+    uint64_t total_cpu_time_ns;
+    uint64_t total_usage_ns;
+    unsigned long cpu_porcentaje;
+
+    int b;
+
+    int porcentaje;
+    int a;
+
     total_ram_pages = totalram_pages();
     if (!total_ram_pages)
     {
@@ -37,26 +49,41 @@ static int escribir_a_proc(struct seq_file *file_proc, void *v)
     return -EINVAL;
 #endif
 
-    unsigned long total_cpu_time = jiffies_to_msecs(get_jiffies_64());
-    unsigned long total_usage = 0;
+    total_cpu_time_ns = 0; // Inicializa a cero
+    total_usage_ns = 0;    // Inicializa a cero
+    cpu_porcentaje = 0;
 
     for_each_process(task)
     {
-        unsigned long cpu_time = jiffies_to_msecs(task->utime + task->stime);
-        unsigned long cpu_percentage = (cpu_time * 100) / total_cpu_time;
-        total_usage += cpu_time;
+        uint64_t cpu_time_ns;
+        cpu_time_ns = task->utime + task->stime;
+        total_usage_ns += cpu_time_ns;
     }
+
+    total_cpu_time_ns = ktime_to_ns(ktime_get()); // Obtén el tiempo total de CPU
+
+    if (total_cpu_time_ns > 0)
+    {
+        cpu_porcentaje = (total_usage_ns * 100) / total_cpu_time_ns;
+    }
+    else
+    {
+        cpu_porcentaje = 0; // Evitar división por cero
+    }
+
     //---------------------------------------------------------------------------
-    seq_printf(file_proc, "{\n\"cpu_total\":%lu,\n", total_cpu_time);
-    seq_printf(file_proc, "\"cpu_porcentaje\":%lu,\n", (total_usage * 100) / total_cpu_time);
+
+    seq_printf(file_proc, "{\n\"cpu_total\":%llu,\n", total_cpu_time_ns);
+    seq_printf(file_proc, "\"cpu_en_uso\":%llu,\n", total_usage_ns);
+    seq_printf(file_proc, "\"cpu_porcentaje\":%ld,\n", cpu_porcentaje);
     seq_printf(file_proc, "\"processes\":[\n");
-    int b = 0;
+    b = 0;
 
     for_each_process(task)
     {
         if (task->mm)
         {
-            rss = get_mm_rss(task->mm) << PAGE_SHIFT;
+            rss = get_mm_rss(task->mm);
         }
         else
         {
@@ -71,34 +98,33 @@ static int escribir_a_proc(struct seq_file *file_proc, void *v)
         {
             seq_printf(file_proc, ",{");
         }
-        seq_printf(file_proc, "\"pid\":%lu,\n", task->pid);
+        seq_printf(file_proc, "\"pid\":%d,\n", task->pid);
         seq_printf(file_proc, "\"name\":\"%s\",\n", task->comm);
-        seq_printf(file_proc, "\"user\": %lu,\n", task->cred->uid);
-        seq_printf(file_proc, "\"state\":%ld,\n", task->__state);
-        int porcentaje = (rss * 100) / total_ram_pages;
-        seq_printf(file_proc, "\"ram\":%lu,\n", porcentaje);
-
+        seq_printf(file_proc, "\"user\": %u,\n", task->cred->uid.val);
+        seq_printf(file_proc, "\"state\":%u,\n", task->__state);
+        porcentaje = (rss * 100) / total_ram_pages;
+        seq_printf(file_proc, "\"ram\":%d,\n", porcentaje);
         seq_printf(file_proc, "\"child\":[\n");
-        int a = 0;
+        a = 0;
         list_for_each(list, &(task->children))
         {
             task_child = list_entry(list, struct task_struct, sibling);
             if (a != 0)
             {
                 seq_printf(file_proc, ",{");
-                seq_printf(file_proc, "\"pid\":%lu,\n", task_child->pid);
+                seq_printf(file_proc, "\"pid\":%d,\n", task_child->pid);
                 seq_printf(file_proc, "\"name\":\"%s\",\n", task_child->comm);
-                seq_printf(file_proc, "\"state\":%ld,\n", task_child->__state);
-                seq_printf(file_proc, "\"pidPadre\":%lu\n", task->pid);
+                seq_printf(file_proc, "\"state\":%u,\n", task_child->__state);
+                seq_printf(file_proc, "\"pidPadre\":%d\n", task->pid);
                 seq_printf(file_proc, "}\n");
             }
             else
             {
                 seq_printf(file_proc, "{");
-                seq_printf(file_proc, "\"pid\":%lu,\n", task_child->pid);
+                seq_printf(file_proc, "\"pid\":%d,\n", task_child->pid);
                 seq_printf(file_proc, "\"name\":\"%s\",\n", task_child->comm);
-                seq_printf(file_proc, "\"state\":%ld,\n", task_child->__state);
-                seq_printf(file_proc, "\"pidPadre\":%lu\n", task->pid);
+                seq_printf(file_proc, "\"state\":%u,\n", task_child->__state);
+                seq_printf(file_proc, "\"pidPadre\":%d\n", task->pid);
                 seq_printf(file_proc, "}\n");
                 a = 1;
             }
@@ -126,11 +152,11 @@ static int escribir_a_proc(struct seq_file *file_proc, void *v)
     }
     b = 0;
     seq_printf(file_proc, "],\n");
-    seq_printf(file_proc, "\"running\":%lu,\n", running);
-    seq_printf(file_proc, "\"sleeping\":%lu,\n", sleeping);
-    seq_printf(file_proc, "\"zombie\":%lu,\n", zombie);
-    seq_printf(file_proc, "\"stopped\":%lu,\n", stopped);
-    seq_printf(file_proc, "\"total\":%lu\n", running + sleeping + zombie + stopped);
+    seq_printf(file_proc, "\"running\":%d,\n", running);
+    seq_printf(file_proc, "\"sleeping\":%d,\n", sleeping);
+    seq_printf(file_proc, "\"zombie\":%d,\n", zombie);
+    seq_printf(file_proc, "\"stopped\":%d,\n", stopped);
+    seq_printf(file_proc, "\"total\":%d\n", running + sleeping + zombie + stopped);
     seq_printf(file_proc, "}\n");
     return 0;
 }
