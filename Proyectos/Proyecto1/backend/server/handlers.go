@@ -7,6 +7,7 @@ import (
 	"log"
 	"net/http"
 	"os/exec"
+	"strconv"
 )
 
 // Estructura para almacenar la informacion de la RAM
@@ -39,9 +40,9 @@ type CPUInfo struct {
 }
 
 type ProcesoInfo struct {
-	ID       int
-	Name     string
-	Children []ProcesoInfo
+	ID       int           `json:"id"`
+	Name     string        `json:"name"`
+	Children []ProcesoInfo `json:"children"`
 }
 
 func index(w http.ResponseWriter, r *http.Request) {
@@ -175,7 +176,62 @@ func getObtenerHistoricos(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, responseData)
 }
 
-func getObtenerProcesosPadre(w http.ResponseWriter, r *http.Request) {
+func getObtenerProcesosPadres(w http.ResponseWriter, r *http.Request) {
+
+	// Configurar el encabezado para indicar que el contenido es JSON
+	w.Header().Set("Content-Type", "application/json")
+	// Permitir solicitudes desde cualquier origen
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+
+	// Obtener información de la CPU
+	cpuCmd := exec.Command("sh", "-c", "cat /proc/cpu_so1_1s2024")
+	cpuOut, cpuErr := cpuCmd.CombinedOutput()
+	if cpuErr != nil {
+		fmt.Println(cpuErr)
+		http.Error(w, "Error al obtener la información de la CPU", http.StatusInternalServerError)
+		return
+	}
+
+	// Convertir la cadena JSON en la estructura Go
+	var cpuInfo CPUInfo
+	err := json.Unmarshal([]byte(cpuOut), &cpuInfo)
+	if err != nil {
+		fmt.Println("Error al decodificar JSON:", err)
+		return
+	}
+
+	// Crear una estructura para almacenar toda la información
+	var arbolGenealogico []ProcesoInfo
+
+	// Iterar sobre los procesos y sus hijos
+	for _, process := range cpuInfo.Procesos {
+
+		// Agregar un nuevo padre
+		nuevoPadre := ProcesoInfo{ID: process.PID, Name: strconv.Itoa(process.PID) + " - " + process.Name}
+		if !existeID(arbolGenealogico, nuevoPadre.ID) {
+			agregarNuevoPadreNivelSuperior(&arbolGenealogico, nuevoPadre)
+		}
+
+		// Iterar sobre los procesos hijos
+		for _, child := range process.Children {
+			agregarNuevoHijo(&arbolGenealogico, child.PidPadre, ProcesoInfo{ID: child.PID, Name: strconv.Itoa(child.PID) + " - " + child.Name})
+		}
+	}
+
+	// Obtener nombres e IDs
+	resultado := obtenerNombresIDs(arbolGenealogico)
+
+	// Convertir a JSON e imprimir
+	jsonData, err := json.Marshal(resultado)
+	if err != nil {
+		fmt.Println("Error al convertir a JSON:", err)
+		return
+	}
+
+	fmt.Fprintf(w, string(jsonData))
+}
+
+func getObtenerProcesosGenerales(w http.ResponseWriter, r *http.Request) {
 
 	// Configurar el encabezado para indicar que el contenido es JSON
 	w.Header().Set("Content-Type", "application/json")
@@ -227,12 +283,101 @@ func getObtenerProcesosPadre(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, string(jsonData))
 }
 
+func getObtenerProcesosSegunModulo(w http.ResponseWriter, r *http.Request) {
+
+	// Configurar el encabezado para indicar que el contenido es JSON
+	w.Header().Set("Content-Type", "application/json")
+	// Permitir solicitudes desde cualquier origen
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+
+	// Obtener información de la CPU
+	cpuCmd := exec.Command("sh", "-c", "cat /proc/cpu_so1_1s2024")
+	cpuOut, cpuErr := cpuCmd.CombinedOutput()
+	if cpuErr != nil {
+		fmt.Println(cpuErr)
+		http.Error(w, "Error al obtener la información de la CPU", http.StatusInternalServerError)
+		return
+	}
+
+	// Convertir la cadena JSON en la estructura Go
+	var cpuInfo CPUInfo
+	err := json.Unmarshal([]byte(cpuOut), &cpuInfo)
+	if err != nil {
+		fmt.Println("Error al decodificar JSON:", err)
+		return
+	}
+
+	// Convertir a JSON
+	jsonData, err := json.Marshal(cpuInfo)
+	if err != nil {
+		fmt.Println("Error al convertir a JSON:", err)
+		return
+	}
+
+	fmt.Fprintf(w, string(jsonData))
+}
+
+func getObtenerArbolDeProceso(w http.ResponseWriter, r *http.Request, identificador int) {
+
+	// Configurar el encabezado para indicar que el contenido es JSON
+	w.Header().Set("Content-Type", "application/json")
+	// Permitir solicitudes desde cualquier origen
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+
+	// Obtener información de la CPU
+	cpuCmd := exec.Command("sh", "-c", "cat /proc/cpu_so1_1s2024")
+	cpuOut, cpuErr := cpuCmd.CombinedOutput()
+	if cpuErr != nil {
+		fmt.Println(cpuErr)
+		http.Error(w, "Error al obtener la información de la CPU", http.StatusInternalServerError)
+		return
+	}
+
+	// Convertir la cadena JSON en la estructura Go
+	var cpuInfo CPUInfo
+	err := json.Unmarshal([]byte(cpuOut), &cpuInfo)
+	if err != nil {
+		fmt.Println("Error al decodificar JSON:", err)
+		return
+	}
+
+	// Crear una estructura para almacenar toda la información
+	var arbolGenealogico []ProcesoInfo
+
+	// Iterar sobre los procesos y sus hijos
+	for _, process := range cpuInfo.Procesos {
+
+		// Agregar un nuevo padre
+		nuevoPadre := ProcesoInfo{ID: process.PID, Name: strconv.Itoa(process.PID) + " - " + process.Name}
+		if !existeID(arbolGenealogico, nuevoPadre.ID) {
+			agregarNuevoPadreNivelSuperior(&arbolGenealogico, nuevoPadre)
+		}
+
+		// Iterar sobre los procesos hijos
+		for _, child := range process.Children {
+			agregarNuevoHijo(&arbolGenealogico, child.PidPadre, ProcesoInfo{ID: child.PID, Name: strconv.Itoa(child.PID) + " - " + child.Name})
+		}
+	}
+
+	// Buscar por ID
+	resultado := buscarPorID(arbolGenealogico, identificador)
+
+	// Convertir a JSON e imprimir
+	jsonData, err := json.Marshal(resultado)
+	if err != nil {
+		fmt.Println("Error al convertir a JSON:", err)
+		return
+	}
+
+	fmt.Fprintf(w, string(jsonData))
+}
+
 // Función para agregar un nuevo padre al mismo nivel que el Abuelo
 func agregarNuevoPadreNivelSuperior(arbol *[]ProcesoInfo, nuevoPadre ProcesoInfo) {
 	*arbol = append(*arbol, nuevoPadre)
 }
 
-// Función para agregar un nuevo hijo a la persona con el ID especificado
+// Función para agregar un nuevo hijo a la proceso con el ID especificado
 func agregarNuevoHijo(arbol *[]ProcesoInfo, idPadre int, nuevoHijo ProcesoInfo) {
 	for i := range *arbol {
 		if (*arbol)[i].ID == idPadre {
@@ -247,13 +392,55 @@ func agregarNuevoHijo(arbol *[]ProcesoInfo, idPadre int, nuevoHijo ProcesoInfo) 
 
 // Función para verificar si un ID existe en el árbol genealógico
 func existeID(arbol []ProcesoInfo, id int) bool {
-	for _, persona := range arbol {
-		if persona.ID == id {
+	for _, proceso := range arbol {
+		if proceso.ID == id {
 			return true
 		}
-		if len(persona.Children) > 0 && existeID(persona.Children, id) {
+		if len(proceso.Children) > 0 && existeID(proceso.Children, id) {
 			return true
 		}
 	}
 	return false
+}
+
+// Función para obtener nombres e IDs
+func obtenerNombresIDs(arbol []ProcesoInfo) []map[string]interface{} {
+	var resultado []map[string]interface{}
+
+	for _, proceso := range arbol {
+		// Crear un mapa para almacenar el par key-value
+		info := make(map[string]interface{})
+		info["value"] = proceso.ID
+		info["label"] = proceso.Name
+
+		// Agregar el mapa al resultado
+		resultado = append(resultado, info)
+
+		// Si hay hijos, realizar la llamada recursiva
+		if len(proceso.Children) > 0 {
+			hijos := obtenerNombresIDs(proceso.Children)
+			resultado = append(resultado, hijos...)
+		}
+	}
+
+	return resultado
+}
+
+// Función para buscar por ID y retornar toda la información de la proceso
+func buscarPorID(arbol []ProcesoInfo, id int) *ProcesoInfo {
+	for _, proceso := range arbol {
+		if proceso.ID == id {
+			return &proceso
+		}
+
+		// Si hay hijos, realizar la llamada recursiva
+		if len(proceso.Children) > 0 {
+			if resultado := buscarPorID(proceso.Children, id); resultado != nil {
+				return resultado
+			}
+		}
+	}
+
+	// Si no se encuentra, retornar nil
+	return nil
 }

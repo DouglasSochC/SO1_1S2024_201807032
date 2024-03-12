@@ -4,33 +4,56 @@ import React, { useEffect, useState } from 'react';
 import Layout from '@/components/Layout/page';
 import { Tree } from 'react-d3-tree';
 import Select from 'react-select';
-
-const data = [{"id":1,"name":"Abuelo","children":[{"id":2,"name":"Padre","children":[{"id":4,"name":"Hijo1","children":[{"id":8,"name":"Nieto1"}]},{"id":5,"name":"Hijo2","children":[{"id":9,"name":"Nieto2"}]}]},{"id":3,"name":"Tío","children":[{"id":6,"name":"Sobrino1","children":[{"id":10,"name":"NuevoHijo"}]}]}]}]
+import withReactContent from 'sweetalert2-react-content';
+import Swal from 'sweetalert2';
 
 const treeConfig = {
     orientation: 'vertical'
 };
 
-
+const MySwal = withReactContent(Swal);
 
 const TreeComponent = () => {
     const [mounted, setMounted] = useState(false);
     const [processes, setProcesses] = useState([]);
-    const [selectedProcess, setSelectedProcess] = useState('');
+    const [arbol, setArbol] = useState([{}]);
 
     const fetchData = () => {
 
-        console.log("AQUI");
-        // Reemplaza la URL del endpoint con tu propio endpoint
         fetch('http://localhost:8080/procesos-actuales')
             .then(response => response.json())
             .then(data => {
-                // Asegúrate de que la respuesta tenga el formato adecuado
                 if (Array.isArray(data)) {
                     setProcesses(data);
+                    const Toast = Swal.mixin({
+                        toast: true,
+                        position: "top-end",
+                        showConfirmButton: false,
+                        timer: 3000,
+                        timerProgressBar: true,
+                        didOpen: (toast) => {
+                            toast.onmouseenter = Swal.stopTimer;
+                            toast.onmouseleave = Swal.resumeTimer;
+                        }
+                    });
+                    Toast.fire({
+                        icon: "success",
+                        title: "Procesos obtenidos correctamente"
+                    });
                 } else {
                     console.error('La respuesta del endpoint no tiene el formato esperado.');
                 }
+            })
+            .catch(error => console.error('Error al obtener procesos:', error));
+    };
+
+    const handleProcessChange = (selectedOption) => {
+
+        fetch('http://localhost:8080/arbol-proceso/' + selectedOption.value)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                setArbol(data);
             })
             .catch(error => console.error('Error al obtener procesos:', error));
     };
@@ -62,8 +85,7 @@ const TreeComponent = () => {
                         <label htmlFor="processSelect">Seleccionar Proceso:</label>
                         <Select
                             id="processSelect"
-                            value={selectedProcess}
-                            onChange={(selectedOption) => setSelectedProcess(selectedOption)}
+                            onChange={handleProcessChange}
                             options={processes}
                         />
                     </div>
@@ -71,7 +93,7 @@ const TreeComponent = () => {
 
                     <div className="charts-container">
                         <div style={{ width: '1000px', height: '500px' }}>
-                            {mounted && <Tree data={data} orientation={treeConfig.orientation} />}
+                            {mounted && <Tree data={arbol} orientation={treeConfig.orientation} />}
                         </div>
 
                     </div>
