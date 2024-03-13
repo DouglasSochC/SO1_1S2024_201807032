@@ -45,6 +45,8 @@ type ProcesoInfo struct {
 	Children []ProcesoInfo `json:"children"`
 }
 
+var process *exec.Cmd
+
 func index(w http.ResponseWriter, r *http.Request) {
 
 	cmd := exec.Command("sh", "-c", "cat /proc/ram_so1_1s2024")
@@ -370,6 +372,81 @@ func getObtenerArbolDeProceso(w http.ResponseWriter, r *http.Request, identifica
 	}
 
 	fmt.Fprintf(w, string(jsonData))
+}
+
+func manejadorInicioProceso(w http.ResponseWriter, r *http.Request) {
+
+	// Crear un nuevo proceso con un comando de espera
+	cmd := exec.Command("bash", "-c", "while true; do echo 'Ejecutando proceso...'; done")
+	err := cmd.Start()
+	if err != nil {
+		fmt.Print(err)
+		http.Error(w, "Error al iniciar el proceso", http.StatusInternalServerError)
+		return
+	}
+
+	// Obtener el comando con PID
+	process = cmd
+
+	// Respuesta
+	fmt.Fprintf(w, strconv.Itoa(process.Process.Pid))
+}
+
+func manejadorPararProceso(w http.ResponseWriter, r *http.Request, pidStr string) {
+
+	pid, err := strconv.Atoi(pidStr)
+	if err != nil {
+		http.Error(w, "El parámetro 'pid' debe ser un número entero", http.StatusBadRequest)
+		return
+	}
+
+	// Enviar señal SIGSTOP al proceso con el PID proporcionado
+	cmd := exec.Command("kill", "-SIGSTOP", pidStr)
+	err = cmd.Run()
+	if err != nil {
+		http.Error(w, fmt.Sprintf("Error al detener el proceso con PID %d", pid), http.StatusInternalServerError)
+		return
+	}
+
+	fmt.Fprintf(w, "Proceso con PID %d detenido", pid)
+}
+
+func manejadorIniciarProceso(w http.ResponseWriter, r *http.Request, pidStr string) {
+
+	pid, err := strconv.Atoi(pidStr)
+	if err != nil {
+		http.Error(w, "El parámetro 'pid' debe ser un número entero", http.StatusBadRequest)
+		return
+	}
+
+	// Enviar señal SIGCONT al proceso con el PID proporcionado
+	cmd := exec.Command("kill", "-SIGCONT", strconv.Itoa(pid))
+	err = cmd.Run()
+	if err != nil {
+		http.Error(w, fmt.Sprintf("Error al reanudar el proceso con PID %d", pid), http.StatusInternalServerError)
+		return
+	}
+
+	fmt.Fprintf(w, "Proceso con PID %d reanudado", pid)
+}
+
+func manejadorMatarProceso(w http.ResponseWriter, r *http.Request, pidStr string) {
+
+	pid, err := strconv.Atoi(pidStr)
+	if err != nil {
+		http.Error(w, "El parámetro 'pid' debe ser un número entero", http.StatusBadRequest)
+		return
+	}
+
+	// Enviar señal SIGCONT al proceso con el PID proporcionado
+	cmd := exec.Command("kill", "-9", pidStr)
+	err = cmd.Run()
+	if err != nil {
+		http.Error(w, fmt.Sprintf("Error al intentar terminar el proceso con PID %d", pid), http.StatusInternalServerError)
+		return
+	}
+
+	fmt.Fprintf(w, "Proceso con PID %d ha terminado", pid)
 }
 
 // Función para agregar un nuevo padre al mismo nivel que el Abuelo

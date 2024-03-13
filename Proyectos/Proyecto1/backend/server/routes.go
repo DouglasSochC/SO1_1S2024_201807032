@@ -101,4 +101,87 @@ func initRoutes() {
 			return
 		}
 	})
+
+	http.HandleFunc("/crear-proceso", func(w http.ResponseWriter, r *http.Request) {
+
+		switch r.Method {
+		case http.MethodPost:
+			manejadorInicioProceso(w, r)
+		default:
+			w.WriteHeader(http.StatusMethodNotAllowed)
+			fmt.Fprintf(w, "Method not allowed")
+			return
+		}
+
+	})
+
+	http.HandleFunc("/parar-proceso", func(w http.ResponseWriter, r *http.Request) {
+		switch r.Method {
+		case http.MethodPost:
+
+			// Leer los datos del cuerpo de la solicitud
+			err := r.ParseForm()
+			if err != nil {
+				w.WriteHeader(http.StatusInternalServerError)
+				fmt.Fprintf(w, "Error parsing form data")
+				return
+			}
+
+			// Acceder a los datos del formulario
+			pid := r.Form.Get("pid")
+			manejadorPararProceso(w, r, pid)
+
+		default:
+			w.WriteHeader(http.StatusMethodNotAllowed)
+			fmt.Fprintf(w, "Method not allowed")
+			return
+		}
+	})
+
+	http.HandleFunc("/iniciar-proceso", func(w http.ResponseWriter, r *http.Request) {
+		switch r.Method {
+		case http.MethodPost:
+
+			// Leer los datos del cuerpo de la solicitud
+			err := r.ParseForm()
+			if err != nil {
+				w.WriteHeader(http.StatusInternalServerError)
+				fmt.Fprintf(w, "Error parsing form data")
+				return
+			}
+
+			// Acceder a los datos del formulario
+			pid := r.Form.Get("pid")
+			manejadorIniciarProceso(w, r, pid)
+
+		default:
+			w.WriteHeader(http.StatusMethodNotAllowed)
+			fmt.Fprintf(w, "Method not allowed")
+			return
+		}
+	})
+
+	http.HandleFunc("/matar-proceso", func(w http.ResponseWriter, r *http.Request) {
+		switch r.Method {
+		case http.MethodPost:
+
+			// Leer los datos del cuerpo de la solicitud
+			err := r.ParseForm()
+			if err != nil {
+				w.WriteHeader(http.StatusInternalServerError)
+				fmt.Fprintf(w, "Error parsing form data")
+				return
+			}
+
+			// Acceder a los datos del formulario
+			pid := r.Form.Get("pid")
+			manejadorMatarProceso(w, r, pid)
+
+		default:
+			w.WriteHeader(http.StatusMethodNotAllowed)
+			fmt.Fprintf(w, "Method not allowed")
+			return
+		}
+	})
+
 }
