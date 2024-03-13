@@ -16,24 +16,24 @@ services:
     ports:
       - "3306:3306"
 
-  # backend:
-  #   image: "tarea2_backend"
-  #   container_name: 'BackNodeJS'
-  #   restart: always
-  #   build: ./backend
-  #   ports:
-  #     - "3001:3001"
-  #   depends_on:
-  #     - mysql
+  backend:
+    image: "proyecto1_backend"
+    container_name: 'BackGolang'
+    restart: always
+    build: ./backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - mysql
 
-  # frontend:
-  #   image: 'tarea2_frontend'
-  #   container_name: 'FrontReactJS'
-  #   build: ./frontend
-  #   ports:
-  #     - '3000:3000'
-  #   depends_on:
-  #     - backend
+  frontend:
+    image: 'proyecto1_frontend'
+    container_name: 'FrontNextJS'
+    build: ./frontend
+    ports:
+      - '3000:3000'
+    depends_on:
+      - backend
 
 volumes:
   volume_mysql:

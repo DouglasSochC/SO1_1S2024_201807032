@@ -8,7 +8,7 @@ import (
 
 // Configuración de la conexión a la base de datos
 func SetupDB() (*sql.DB, error) {
-	db, err := sql.Open("mysql", "root:root_password@tcp(localhost:3306)/so1_proyecto1")
+	db, err := sql.Open("mysql", "root:root_password@tcp(mysql:3306)/so1_proyecto1")
 	if err != nil {
 		return nil, err
 	}
