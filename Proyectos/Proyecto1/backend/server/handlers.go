@@ -376,6 +376,10 @@ func getObtenerArbolDeProceso(w http.ResponseWriter, r *http.Request, identifica
 
 func manejadorInicioProceso(w http.ResponseWriter, r *http.Request) {
 
+	// Configurar el encabezado para indicar que el contenido es JSON
+	w.Header().Set("Content-Type", "application/json")
+	// Permitir solicitudes desde cualquier origen
+	w.Header().Set("Access-Control-Allow-Origin", "*")
 	// Crear un nuevo proceso con un comando de espera
 	cmd := exec.Command("bash", "-c", "while true; do echo 'Ejecutando proceso...'; done")
 	err := cmd.Start()
@@ -394,6 +398,11 @@ func manejadorInicioProceso(w http.ResponseWriter, r *http.Request) {
 
 func manejadorPararProceso(w http.ResponseWriter, r *http.Request, pidStr string) {
 
+	// Configurar el encabezado para indicar que el contenido es JSON
+	w.Header().Set("Content-Type", "application/json")
+	// Permitir solicitudes desde cualquier origen
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	// Verifica que el formato del PID sea correcto
 	pid, err := strconv.Atoi(pidStr)
 	if err != nil {
 		http.Error(w, "El parámetro 'pid' debe ser un número entero", http.StatusBadRequest)
@@ -413,6 +422,11 @@ func manejadorPararProceso(w http.ResponseWriter, r *http.Request, pidStr string
 
 func manejadorIniciarProceso(w http.ResponseWriter, r *http.Request, pidStr string) {
 
+	// Configurar el encabezado para indicar que el contenido es JSON
+	w.Header().Set("Content-Type", "application/json")
+	// Permitir solicitudes desde cualquier origen
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	// Verifica que el formato del PID sea correcto
 	pid, err := strconv.Atoi(pidStr)
 	if err != nil {
 		http.Error(w, "El parámetro 'pid' debe ser un número entero", http.StatusBadRequest)
@@ -432,6 +446,11 @@ func manejadorIniciarProceso(w http.ResponseWriter, r *http.Request, pidStr stri
 
 func manejadorMatarProceso(w http.ResponseWriter, r *http.Request, pidStr string) {
 
+	// Configurar el encabezado para indicar que el contenido es JSON
+	w.Header().Set("Content-Type", "application/json")
+	// Permitir solicitudes desde cualquier origen
+	w.Header().Set("Access-Control-Allow-Origin", "*")
+	// Verifica que el formato del PID sea correcto
 	pid, err := strconv.Atoi(pidStr)
 	if err != nil {
 		http.Error(w, "El parámetro 'pid' debe ser un número entero", http.StatusBadRequest)

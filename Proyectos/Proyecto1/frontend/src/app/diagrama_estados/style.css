@@ -22,3 +22,8 @@
 .chart h2 {
     margin-bottom: 10px;
 }
+
+.pid-title {
+    font-size: 1.5em; /* Tamaño del título más grande */
+    margin-bottom: 10px; /* Espacio entre el título y los gráficos */    
+}

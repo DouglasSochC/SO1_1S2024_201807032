@@ -105,7 +105,7 @@ func initRoutes() {
 	http.HandleFunc("/crear-proceso", func(w http.ResponseWriter, r *http.Request) {
 
 		switch r.Method {
-		case http.MethodPost:
+		case http.MethodGet:
 			manejadorInicioProceso(w, r)
 		default:
 			w.WriteHeader(http.StatusMethodNotAllowed)
@@ -115,21 +115,21 @@ func initRoutes() {
 
 	})
 
-	http.HandleFunc("/parar-proceso", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/parar-proceso/", func(w http.ResponseWriter, r *http.Request) {
 		switch r.Method {
-		case http.MethodPost:
+		case http.MethodGet:
 
-			// Leer los datos del cuerpo de la solicitud
-			err := r.ParseForm()
-			if err != nil {
-				w.WriteHeader(http.StatusInternalServerError)
-				fmt.Fprintf(w, "Error parsing form data")
+			// Obtener la parte final de la URL (después de "/parar-proceso/")
+			pidStr := strings.TrimPrefix(r.URL.Path, "/parar-proceso/")
+
+			// Verificar si se proporcionó el parámetro ID
+			if pidStr == "" {
+				w.WriteHeader(http.StatusBadRequest)
+				fmt.Fprintf(w, "PID es requerido")
 				return
 			}
 
-			// Acceder a los datos del formulario
-			pid := r.Form.Get("pid")
-			manejadorPararProceso(w, r, pid)
+			manejadorPararProceso(w, r, pidStr)
 
 		default:
 			w.WriteHeader(http.StatusMethodNotAllowed)
@@ -138,21 +138,20 @@ func initRoutes() {
 		}
 	})
 
-	http.HandleFunc("/iniciar-proceso", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/iniciar-proceso/", func(w http.ResponseWriter, r *http.Request) {
 		switch r.Method {
-		case http.MethodPost:
+		case http.MethodGet:
 
-			// Leer los datos del cuerpo de la solicitud
-			err := r.ParseForm()
-			if err != nil {
-				w.WriteHeader(http.StatusInternalServerError)
-				fmt.Fprintf(w, "Error parsing form data")
+			// Obtener la parte final de la URL (después de "/iniciar-proceso/")
+			pidStr := strings.TrimPrefix(r.URL.Path, "/iniciar-proceso/")
+
+			// Verificar si se proporcionó el parámetro ID
+			if pidStr == "" {
+				w.WriteHeader(http.StatusBadRequest)
+				fmt.Fprintf(w, "PID es requerido")
 				return
 			}
-
-			// Acceder a los datos del formulario
-			pid := r.Form.Get("pid")
-			manejadorIniciarProceso(w, r, pid)
+			manejadorIniciarProceso(w, r, pidStr)
 
 		default:
 			w.WriteHeader(http.StatusMethodNotAllowed)
@@ -161,21 +160,20 @@ func initRoutes() {
 		}
 	})
 
-	http.HandleFunc("/matar-proceso", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/matar-proceso/", func(w http.ResponseWriter, r *http.Request) {
 		switch r.Method {
-		case http.MethodPost:
+		case http.MethodGet:
 
-			// Leer los datos del cuerpo de la solicitud
-			err := r.ParseForm()
-			if err != nil {
-				w.WriteHeader(http.StatusInternalServerError)
-				fmt.Fprintf(w, "Error parsing form data")
+			// Obtener la parte final de la URL (después de "/matar-proceso/")
+			pidStr := strings.TrimPrefix(r.URL.Path, "/matar-proceso/")
+
+			// Verificar si se proporcionó el parámetro ID
+			if pidStr == "" {
+				w.WriteHeader(http.StatusBadRequest)
+				fmt.Fprintf(w, "PID es requerido")
 				return
 			}
-
-			// Acceder a los datos del formulario
-			pid := r.Form.Get("pid")
-			manejadorMatarProceso(w, r, pid)
+			manejadorMatarProceso(w, r, pidStr)
 
 		default:
 			w.WriteHeader(http.StatusMethodNotAllowed)
