@@ -9,6 +9,8 @@ import (
 	"os/signal"
 	"syscall"
 	"time"
+
+	"github.com/joho/godotenv"
 )
 
 func main() {
@@ -18,7 +20,12 @@ func main() {
 	ServerDoneChan := make(chan os.Signal, 1)
 	signal.Notify(ServerDoneChan, os.Interrupt, syscall.SIGTERM)
 
-	srv := server.New(":8080")
+	// Cargar variables de entorno
+	godotenv.Load()
+
+	// Obtener variables de entorno
+	serverPort := os.Getenv("SERVER_PORT")
+	srv := server.New(":" + serverPort)
 
 	// Routine para hacer los registros a la base de datos
 	go func() {

@@ -2,13 +2,26 @@ package database
 
 import (
 	"database/sql"
+	"fmt"
+	"os"
 
 	_ "github.com/go-sql-driver/mysql" // Importa el controlador MySQL
 )
 
 // Configuración de la conexión a la base de datos
 func SetupDB() (*sql.DB, error) {
-	db, err := sql.Open("mysql", "root:root_password@tcp(mysql:3306)/so1_proyecto1")
+
+	// Obtener variables de entorno
+	dbHost := os.Getenv("DB_HOST")
+	dbPort := os.Getenv("DB_PORT")
+	dbUser := os.Getenv("DB_USER")
+	dbPass := os.Getenv("DB_PASSWORD")
+
+	// Construir la cadena de conexión
+	dbURI := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", dbUser, dbPass, dbHost, dbPort, "so1_proyecto1")
+
+	// Intentar conectar a la base de datos
+	db, err := sql.Open("mysql", dbURI)
 	if err != nil {
 		return nil, err
 	}
