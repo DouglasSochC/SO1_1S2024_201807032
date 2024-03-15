@@ -16,6 +16,8 @@ import { Line } from 'react-chartjs-2';
 import 'chart.js/auto';
 import './style.css'
 
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -35,7 +37,7 @@ export default function MonitoreoHistorico() {
 
   const fetchData = async () => {
     try {
-      const response = await fetch('http://localhost:8080/monitoreo-historico');
+      const response = await fetch(BASE_URL + '/monitoreo-historico');
       const data = await response.json();
       setDataRAM(data.ram.data)
       setLabelRAM(data.ram.labels)

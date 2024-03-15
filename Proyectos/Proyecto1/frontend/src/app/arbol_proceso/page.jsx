@@ -4,14 +4,13 @@ import React, { useEffect, useState } from 'react';
 import Layout from '@/components/Layout/page';
 import { Tree } from 'react-d3-tree';
 import Select from 'react-select';
-import withReactContent from 'sweetalert2-react-content';
 import Swal from 'sweetalert2';
+
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const treeConfig = {
     orientation: 'vertical'
 };
-
-const MySwal = withReactContent(Swal);
 
 const TreeComponent = () => {
     const [mounted, setMounted] = useState(false);
@@ -20,7 +19,7 @@ const TreeComponent = () => {
 
     const fetchData = () => {
 
-        fetch('http://localhost:8080/procesos-actuales')
+        fetch(BASE_URL + '/procesos-actuales')
             .then(response => response.json())
             .then(data => {
                 if (Array.isArray(data)) {
@@ -49,7 +48,7 @@ const TreeComponent = () => {
 
     const handleProcessChange = (selectedOption) => {
 
-        fetch('http://localhost:8080/arbol-proceso/' + selectedOption.value)
+        fetch(BASE_URL + '/arbol-proceso/' + selectedOption.value)
             .then(response => response.json())
             .then(data => {
                 console.log(data);

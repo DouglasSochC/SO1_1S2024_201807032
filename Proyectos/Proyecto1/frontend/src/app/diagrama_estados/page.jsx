@@ -6,6 +6,8 @@ import { DataSet, Network } from 'vis-network/standalone';
 import './style.css'
 import Swal from 'sweetalert2';
 
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+
 const showToast = (icon, title) => {
   const Toast = Swal.mixin({
     toast: true,
@@ -39,7 +41,7 @@ export default function DiagramaEstados() {
         showToast("error", "Existe un proceso activo");
       } else {
 
-        const response = await fetch('http://localhost:8080/crear-proceso');
+        const response = await fetch(BASE_URL + '/crear-proceso');
         const data = await response.json();
         setNodes([]);
         setEdges([]);
@@ -69,7 +71,7 @@ export default function DiagramaEstados() {
       else if (idActual == 2) {
         showToast("error", "El proceso ya esta detenido");
       } else {
-        await fetch('http://localhost:8080/parar-proceso/' + pid);
+        await fetch(BASE_URL + '/parar-proceso/' + pid);
         const nodoNew = { id: 2, label: 'Ready', color: '#265DD2' };
         const existe = nodes.some(nodo => nodo.id === 2);
         if (!existe) {
@@ -93,7 +95,7 @@ export default function DiagramaEstados() {
       else if (idActual == 3) {
         showToast("error", "El proceso ya esta corriendo");
       } else {
-        await fetch('http://localhost:8080/iniciar-proceso/' + pid);
+        await fetch(BASE_URL + '/iniciar-proceso/' + pid);
         const newEdge = { from: idActual, to: 3, arrows: 'to' };
         setEdges(prevEdges => [...prevEdges, newEdge]);
         showToast("success", "Proceso corriendo correctamente");
@@ -112,7 +114,7 @@ export default function DiagramaEstados() {
       else if (idActual == 4) {
         showToast("error", "El proceso ya finalizo");
       } else {
-        await fetch('http://localhost:8080/matar-proceso/' + pid);
+        await fetch(BASE_URL + '/matar-proceso/' + pid);
         const nodoNew = { id: 4, label: 'Terminated', color: '#D24326' };
         const existe = nodes.some(nodo => nodo.id === 4);
         if (!existe) {

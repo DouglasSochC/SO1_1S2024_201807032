@@ -6,6 +6,8 @@ import { Pie } from 'react-chartjs-2';
 import 'chart.js/auto';
 import './style.css'
 
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
+
 export default function MonitoreoTiempoReal() {
 
   const [dataRAM, setDataRAM] = useState([0, 0]);
@@ -15,7 +17,7 @@ export default function MonitoreoTiempoReal() {
     const actualizarEstadoCadaSegundo = async () => {
       try {
         // Se obtienen los datos para la RAM
-        const responseRAM = await fetch('http://localhost:8080/monitoreo-tiempo-real');
+        const responseRAM = await fetch(BASE_URL + '/monitoreo-tiempo-real');
         if (responseRAM.ok) {
           const jsonData = await responseRAM.json();
           setDataRAM([jsonData.ram.memoria_porcentaje_uso, 100 - jsonData.ram.memoria_porcentaje_uso]);
