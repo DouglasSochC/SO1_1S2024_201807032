@@ -17,7 +17,7 @@ services:
       - "3306:3306"
 
   backend:
-    image: "proyecto1_backend"
+    image: douglassochc/proyecto1_backend:latest
     container_name: 'BackGolang'
     restart: always
     build: ./backend
@@ -33,7 +33,7 @@ services:
       - mysql
 
   frontend:
-    image: 'proyecto1_frontend'
+    image: douglassochc/proyecto1_frontend:latest
     container_name: 'FrontNextJS'
     build:
       context: ./frontend
