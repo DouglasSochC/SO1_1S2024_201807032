@@ -1,0 +1,62 @@
+[
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "94"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1975",
+        "rank": "93"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Wall",
+        "year": "1979",
+        "rank": "92"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Animals",
+        "year": "1977",
+        "rank": "91"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Meddle",
+        "year": "1971",
+        "rank": "90"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "98"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Revolver",
+        "year": "1966",
+        "rank": "97"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1969",
+        "rank": "96"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Rubber Soul",
+        "year": "1965",
+        "rank": "95"
+    },
+    {
+        "name": "The Beatles",
+        "album": "The Beatles (White Album)",
+        "year": "1968",
+        "rank": "94"
+    }
+]
