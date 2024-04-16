@@ -6,7 +6,7 @@ services:
     image: douglassochc/proyecto2_grpc_servidor:latest
     container_name: 'GRPCServer'
     restart: always
-    build: ./sevidor
+    build: ./servidor
     environment:
       DB_HOST: localhost
       DB_PORT: 3306
