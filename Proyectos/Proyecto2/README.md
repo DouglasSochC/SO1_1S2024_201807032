@@ -1,14 +1,30 @@
 # Sistema distribuido de votaciones
 
-_En este proyecto universitario del curso Sistemas Operativos 1, se tiene como objetivo principal implementar un sistema de votaciones para un concurso de bandas de música guatemalteca; el propósito de este es enviar tráfico por medio de archivos con votaciones creadas hacia distintos servicios (grpc y wasm) que van a encolar cada uno de los datos enviados, así mismo se tendrán ciertos consumidores a la escucha del sistema de colas para enviar datos a una base de datos en Redis; estos datos se verán en dashboards en tiempo real. También se tiene una base de datos de Mongodb para guardar los logs, los cuales serán consultados por medio de una aplicación web._
+En este proyecto universitario del curso Sistemas Operativos 1
 
 ## Introduccion
 
+El principal objetivo de este proyecto es establecer un sistema de votación para un certamen de bandas de música guatemalteca. Se planea dirigir tráfico a través de archivos de votación hacia varios servicios (grpc y wasm) que se encargarán de encolar los datos recibidos. Además, se implementarán consumidores que monitorearán el sistema de colas para transferir los datos a una base de datos en Redis. Estos datos serán visualizados en tiempo real en paneles de control. Asimismo, se utilizará una base de datos MongoDB para almacenar registros, los cuales podrán ser consultados mediante una aplicación web.
+
 ## Objetivos
 
-## 🚀 Comenzando
+* Implementar un sistema distribuido con microservicios en kubernetes.
+* Encolar distintos servicios con sistemas de mensajerías.
+* Utilizar Grafana como interfaz gráfica de dashboards.
 
-### 📋 Requerimientos
+## Indice
+
+* [Comenzando](#comenzando)
+    * [Requerimientos](#requerimientos)
+* [Entorno de desarrollo](#entorno-desarrollo)
+    * [Para Locust](#para-locust)
+    * [Para el Producer GRPC](#para-producer-grpc)
+* [Desplegar proyecto](#desplegar-proyecto)
+* [Documentacion](#documentacion)
+
+## ⭐ Comenzando <div id='comenzando'></div>
+
+### 📋 Requerimientos <div id='requerimientos'></div>
 
 * [Python 3.12.0](https://www.python.org/downloads/)
 ```console
@@ -25,13 +41,27 @@ go version
 gcloud version
 ```
 
-* [gRPC para Golang](https://grpc.io/docs/languages/go/quickstart/)
+#### Paquetes adicionales
 
 * [Protoc](https://www.geeksforgeeks.org/how-to-install-protocol-buffers-on-windows/)
 
-<!-- ### ⚙️ Ejecucion
+* [gRPC para Golang](https://grpc.io/docs/languages/go/quickstart/)
 
-Se utilizara un entorno virtual para levantar el proyecto con el fin de aislar las dependencias, evitar conflictos entre versiones, y garantizar que el proyecto tenga su propio entorno reproducible.
+* Kubectl
+
+    ```console
+    gcloud components install kubectl
+    ```
+
+## ⚙️ Entorno de desarrollo <div id='entorno-desarrollo'></div>
+
+Después de haber instalado todos los requisitos del proyecto, aquí tienes una guía y un conjunto de comandos útiles que te servirán si decides trabajar en el proyecto.
+
+### Para Locust <div id='para-locust'></div>
+
+#### Creación de entorno virtual
+
+Se utilizara un entorno virtual para levantar Locust con el fin de aislar las dependencias, evitar conflictos entre versiones, y garantizar que Locust tenga su propio entorno reproducible.
 
 Instalar el modulo **virtualenv**
 
@@ -39,7 +69,7 @@ Instalar el modulo **virtualenv**
 pip install virtualenv
 ```
 
-Ahora dentro de la carpeta del proyecto se debe de realizar lo siguiente:
+Ahora dentro de la carpeta **Locust** se debe de realizar lo siguiente:
 
 1. Creación del entorno virtual, en este caso llama **venv**
 
@@ -59,17 +89,91 @@ Ahora dentro de la carpeta del proyecto se debe de realizar lo siguiente:
     pip install -r requirements.txt
     ```
 
-4. Ejecutar el proyecto
+4. Ejecutar
 
     ```console
-    py main.py
+    locust -f traffic.py
     ```
 
-## 📖 Documentacion
+### Para el Producer GRPC <div id='para-producer-grpc'></div>
 
-### 🔠 a
+#### Generacion de compilados proto
+
+Para generar los compilados tanto del cliente como del servidor, es necesario abrir una consola en la raiz del proyecto y ejecutar los siguientes comandos. Esto permitirá generar los compilados correctamente.
+
+1. Para el cliente
+
+    ```console
+    protoc --go_out=Producers/grpc/cliente/proto/. --go-grpc_out=Producers/grpc/cliente/proto/. Producers/grpc/cliente/proto/client.proto
+    ```
+
+2. Para el servidor
+
+    ```console
+    protoc --go_out=Producers/grpc/servidor/proto/. --go-grpc_out=Producers/grpc/servidor/proto/. Producers/grpc/servidor/proto/server.proto
+    ```
+
+#### Subir imagen a Docker Hub
+
+1. Se inicia sesión
+
+    ```console
+    docker login
+    ```
+
+2. Se crea el tag de la imagen
+
+    ```console
+    docker tag mi-aplicacion tu_nombre_de_usuario/mi-aplicacion:version
+    ```
+
+3. Se sube la imagen
+
+    ```console
+    docker push tu_nombre_de_usuario/mi-aplicacion:version
+    ```
+
+## 🚀 Desplegar proyecto <div id='desplegar-proyecto'></div>
+
+Dado que las imágenes de cada módulo se encuentran en Docker Hub, solo necesitas ejecutar los manifiestos en el siguiente orden. Asegúrate de que la consola esté ubicada en la ruta raíz de este proyecto antes de proceder.
+
+1. Creación del namespace
+
+    ```console
+    kubectl create -f namespace.yaml
+    ```
+
+2. Creación del pod de MongoDB
+
+    <!-- ```console
+    kubectl create -f Database/mongodb.yaml
+    ``` -->
+
+4. Creación del pod de Redis
+
+    <!-- ```console
+    kubectl create -f Database/redis.yaml
+    ``` -->
+
+5. Creación de Kafka
+
+6. Creación del servicio y pod del producer GRPC
+
+    ```console
+    kubectl create -f Producers/producers.yaml
+    ```
+
+7. Creación de Ingress
+
+    ```console
+    kubectl create -f Ingress/ingress.yaml
+    ```
+
+## 📖 Documentacion <div id='documentacion'></div>
+
+### 🎡 Arquitectura
 
 abc
 
 ### 📑 b
-abc -->
+abc
