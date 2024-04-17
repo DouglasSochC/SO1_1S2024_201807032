@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+
+  servidor:
+    image: douglassochc/proyecto2_deployment:latest
+    container_name: 'Deployment'
+    restart: always
+    build: ./
+    environment:
+      KAFKA_BROKERS: test1
+      KAFKA_TOPIC: test2
+    ports:
+      - "9092:9092"
