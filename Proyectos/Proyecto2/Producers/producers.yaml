@@ -48,7 +48,7 @@ metadata:
   name: service-grpc-app
   namespace: so1-p2-201807032
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   selector:
     app: grpc-app
   ports:
