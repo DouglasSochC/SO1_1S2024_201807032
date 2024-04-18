@@ -1,48 +1,38 @@
 package main
 
 import (
+	"context"
 	"fmt"
 	"os"
 
-	"github.com/confluentinc/confluent-kafka-go/kafka"
 	"github.com/joho/godotenv"
+	"github.com/segmentio/kafka-go"
 )
 
 func main() {
-
 	// Cargar variables de entorno
 	godotenv.Load()
 
-	// Obtener variables de entorno para la conexion a Kafka
+	// Obtener variables de entorno
 	kafkaBrokers := os.Getenv("KAFKA_BROKERS")
 	kafkaTopic := os.Getenv("KAFKA_TOPIC")
 
-	c, err := kafka.NewConsumer(&kafka.ConfigMap{
-		"bootstrap.servers": kafkaBrokers,
-		"group.id":          "test-group",
-		"auto.offset.reset": "earliest",
+	// Crear un lector de Kafka especificando el tópico y la dirección del servidor
+	r := kafka.NewReader(kafka.ReaderConfig{
+		Brokers:   []string{kafkaBrokers},
+		Topic:     kafkaTopic,
+		Partition: 0,
+		MinBytes:  10e3, // 10KB
+		MaxBytes:  10e6, // 10MB
 	})
+	defer r.Close()
 
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Failed to create consumer: %s\n", err)
-		os.Exit(1)
-	}
-
-	err = c.SubscribeTopics([]string{kafkaTopic}, nil)
-
-	if err != nil {
-		fmt.Fprintf(os.Stderr, "Failed to subscribe to topics: %s\n", err)
-		os.Exit(1)
-	}
-
-	fmt.Printf("Listening to topic: %s\n", kafkaTopic)
-
+	// Leer mensajes
 	for {
-		msg, err := c.ReadMessage(-1)
-		if err == nil {
-			fmt.Printf("Received message on topic %s: %s\n", msg.TopicPartition, string(msg.Value))
-		} else {
-			fmt.Fprintf(os.Stderr, "Error reading message: %s\n", err)
+		m, err := r.ReadMessage(context.Background())
+		if err != nil {
+			break
 		}
+		fmt.Printf("message at offset %d: %s = %s\n", m.Offset, string(m.Key), string(m.Value))
 	}
 }

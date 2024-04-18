@@ -17,7 +17,7 @@ COPY . .
 RUN go build -o main .
 
 # Puerto en el que la aplicación se ejecutara
-EXPOSE 9092
+EXPOSE 3000
 
 # Comando para iniciar la aplicación cuando se ejecute el contenedor
 CMD ["./main"]

@@ -149,18 +149,41 @@ Dado que las imágenes de cada módulo se encuentran en Docker Hub, solo necesit
     kubectl create -f Database/mongodb.yaml
     ``` -->
 
-4. Creación del pod de Redis
+3. Creación del pod de Redis
 
     <!-- ```console
     kubectl create -f Database/redis.yaml
     ``` -->
 
-5. Creación de Kafka
+4. Creación de Kafka con Strimzi
 
-6. Creación del servicio y pod del producer GRPC
+    * Creación del operador
+
+        ```console
+        kubectl create -f 'https://strimzi.io/install/latest?namespace=so1-p2-201807032' -n so1-p2-201807032
+        ```
+
+    * Creación del Zookeeper
+
+        ```console
+        kubectl apply -f https://strimzi.io/examples/latest/kafka/kafka-persistent-single.yaml -n so1-p2-201807032
+        ```
+
+    * Creación del topic
+
+        ```console
+        kubectl create -f Kafka/topic.yaml
+        ```
+
+5. Creación del servicio y pod del producer GRPC
 
     ```console
-    kubectl create -f Producers/producers.yaml
+    kubectl create -f Producers/grpc/grpc.yaml
+    ```
+
+6. Creación del servicio y pod del producer WASM
+
+    ```console
     ```
 
 7. Creación de Ingress
