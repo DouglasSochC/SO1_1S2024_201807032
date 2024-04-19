@@ -2,8 +2,8 @@ version: '3'
 
 services:
 
-  servidor:
-    image: douglassochc/proyecto2_consumer:latest
+  consumer:
+    image: douglassochc/proyecto2_consumer:v1
     container_name: 'Deployment'
     restart: always
     build: ./

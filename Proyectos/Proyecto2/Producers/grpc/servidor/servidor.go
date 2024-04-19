@@ -2,21 +2,17 @@ package main
 
 import (
 	"context"
-	"database/sql"
-	"fmt"
+	"encoding/json"
 	"log"
 	"net"
 	"os"
 	pb "servidor/proto"
 
-	_ "github.com/go-sql-driver/mysql"
 	"google.golang.org/grpc"
 
 	"github.com/joho/godotenv"
+	"github.com/segmentio/kafka-go"
 )
-
-var ctx = context.Background()
-var db *sql.DB
 
 type server struct {
 	pb.UnimplementedGetInfoServer
@@ -29,52 +25,50 @@ type Data struct {
 	Rank  string
 }
 
-func mysqlConnect() {
-
-	// Obtener variables de entorno para la conexion a MySQL
-	dbUser := os.Getenv("DB_USER")
-	dbPass := os.Getenv("DB_PASSWORD")
-	dbHost := os.Getenv("DB_HOST")
-	dbPort := os.Getenv("DB_PORT")
-	dbName := os.Getenv("DB_NAME")
-
-	// Configurando conexion de MySQL
-	dsn := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", dbUser, dbPass, dbHost, dbPort, dbName)
-
-	var err error
-	db, err = sql.Open("mysql", dsn)
-	if err != nil {
-		log.Fatalln(err)
-	}
-
-	err = db.Ping()
-	if err != nil {
-		log.Fatalln(err)
-	}
-
-	fmt.Println("Conexión a MySQL exitosa")
-}
-
 func (s *server) ReturnInfo(ctx context.Context, in *pb.RequestId) (*pb.ReplyInfo, error) {
-	fmt.Println("Recibí de cliente: ", in.GetRank())
+
 	data := Data{
 		Name:  in.GetName(),
 		Album: in.GetAlbum(),
 		Year:  in.GetYear(),
 		Rank:  in.GetRank(),
 	}
-	fmt.Println(data)
-	insertMySQL(data)
-	return &pb.ReplyInfo{Info: "Hola cliente, recibí el comentario"}, nil
+	enviarMensaje(data)
+	log.Printf("Recibí la información: %v", data)
+	return &pb.ReplyInfo{Info: "Hola cliente, recibí la informacion que me enviaste"}, nil
 }
 
-func insertMySQL(voto Data) {
-	// Prepara la consulta SQL para la inserción en MySQL
-	query := "INSERT INTO votos (name_v, album_v, year_v, rank_v) VALUES (?, ?, ?, ?)"
-	_, err := db.ExecContext(ctx, query, voto.Name, voto.Album, voto.Year, voto.Rank)
-	if err != nil {
-		log.Println("Error al insertar en MySQL:", err)
+func enviarMensaje(data Data) {
+
+	// Se convierte el 'data' en un JSON
+	jsonData, errjson := json.Marshal(data)
+	if errjson != nil {
+		log.Fatal("Error marshaling data:", errjson)
+		return
 	}
+
+	// Obtener variables de entorno para la comunicacion con kafka
+	kafkaBrokers := os.Getenv("KAFKA_BROKERS")
+	kafkaTopic := os.Getenv("KAFKA_TOPIC")
+
+	// Crear un escritor de Kafka especificando el tópico y la dirección del servidor
+	w := kafka.NewWriter(kafka.WriterConfig{
+		Brokers:  []string{kafkaBrokers},
+		Topic:    kafkaTopic,
+		Balancer: &kafka.LeastBytes{},
+	})
+	defer w.Close()
+
+	// Enviar un mensaje al tópico
+	err := w.WriteMessages(context.Background(),
+		kafka.Message{
+			Value: jsonData,
+		},
+	)
+	if err != nil {
+		log.Fatal("failed to write messages:", err)
+	}
+
 }
 
 func main() {
@@ -91,8 +85,7 @@ func main() {
 	}
 	s := grpc.NewServer()
 	pb.RegisterGetInfoServer(s, &server{})
-
-	mysqlConnect()
+	log.Println("Servidor escuchando en el puerto: " + port)
 
 	if err := s.Serve(listen); err != nil {
 		log.Fatalln(err)

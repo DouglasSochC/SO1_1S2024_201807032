@@ -3,25 +3,24 @@ version: '3'
 services:
 
   servidor:
-    image: douglassochc/proyecto2_grpc_servidor:latest
+    image: douglassochc/proyecto2_grpc_servidor:v1
     container_name: 'GRPCServer'
     restart: always
     build: ./servidor
     environment:
-      DB_HOST: localhost
-      DB_PORT: 3306
-      DB_USER: root
-      DB_PASSWORD: password
-      DB_NAME: proyecto2
+      KAFKA_BROKERS: "my-cluster-kafka-bootstrap:9092"
+      KAFKA_TOPIC: "topic-so1-p2-201807032"
       SERVER_PORT: 3001
     ports:
       - "3001:3001"
 
   cliente:
-    image: douglassochc/proyecto2_grpc_cliente:latest
+    image: douglassochc/proyecto2_grpc_cliente:v1
     container_name: 'GRPCClient'
     restart: always
     build: ./cliente
+    environment:
+      SERVER_HOST: "localhost:3001"
     ports:
       - "3000:3000"
     depends_on:

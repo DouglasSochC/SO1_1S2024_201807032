@@ -124,7 +124,7 @@ Para generar los compilados tanto del cliente como del servidor, es necesario ab
 2. Se crea el tag de la imagen
 
     ```console
-    docker tag mi-aplicacion tu_nombre_de_usuario/mi-aplicacion:version
+    docker tag tu_nombre_de_usuario/mi-aplicacion tu_nombre_de_usuario/mi-aplicacion:version
     ```
 
 3. Se sube la imagen
@@ -163,7 +163,7 @@ Dado que las imágenes de cada módulo se encuentran en Docker Hub, solo necesit
         kubectl create -f 'https://strimzi.io/install/latest?namespace=so1-p2-201807032' -n so1-p2-201807032
         ```
 
-    * Creación del Zookeeper
+    * Creación del volumen
 
         ```console
         kubectl apply -f https://strimzi.io/examples/latest/kafka/kafka-persistent-single.yaml -n so1-p2-201807032
@@ -183,10 +183,16 @@ Dado que las imágenes de cada módulo se encuentran en Docker Hub, solo necesit
 
 6. Creación del servicio y pod del producer WASM
 
+    <!-- ```console
+    ``` -->
+
+7. Creación del servicio y pods del deployment consumer
+
     ```console
+    kubectl create -f Deployment/deployment.yaml
     ```
 
-7. Creación de Ingress
+8. Creación de Ingress
 
     ```console
     kubectl create -f Ingress/ingress.yaml

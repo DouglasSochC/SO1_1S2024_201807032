@@ -73,7 +73,7 @@ func sendServer(voto Data) {
 		log.Fatalln(err)
 	}
 
-	fmt.Println("Respuesta del server " + ret.GetInfo())
+	fmt.Println("Respuesta del server: " + ret.GetInfo())
 }
 
 func main() {
