@@ -153,15 +153,15 @@ Dado que las imágenes de cada módulo se encuentran en Docker Hub, solo necesit
 
 2. Creación del pod de MongoDB
 
-    <!-- ```console
+    ```console
     kubectl create -f Database/mongodb.yaml
-    ``` -->
+    ```
 
 3. Creación del pod de Redis
 
-    <!-- ```console
+    ```console
     kubectl create -f Database/redis.yaml
-    ``` -->
+    ```
 
 4. Creación de Kafka con Strimzi
 
