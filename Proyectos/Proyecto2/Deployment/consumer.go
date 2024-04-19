@@ -2,12 +2,20 @@ package main
 
 import (
 	"context"
-	"fmt"
+	"encoding/json"
+	"log"
 	"os"
 
 	"github.com/joho/godotenv"
 	"github.com/segmentio/kafka-go"
 )
+
+type Data struct {
+	Name  string
+	Album string
+	Year  string
+	Rank  string
+}
 
 func main() {
 	// Cargar variables de entorno
@@ -33,6 +41,21 @@ func main() {
 		if err != nil {
 			break
 		}
-		fmt.Printf("message at offset %d: %s = %s\n", m.Offset, string(m.Key), string(m.Value))
+
+		var data Data
+		if err := json.Unmarshal(m.Value, &data); err != nil {
+			log.Fatal("Error unmarshalling JSON:", err)
+		}
+
+		insertMongoDB(data)
+		insertRedis(data)
 	}
+}
+
+func insertMongoDB(data Data) {
+	log.Printf("Inserción en MongoDB: %v", data)
+}
+
+func insertRedis(data Data) {
+	log.Printf("Inserción en Redis: %v", data)
 }
