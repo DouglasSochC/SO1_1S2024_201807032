@@ -121,13 +121,21 @@ Para generar los compilados tanto del cliente como del servidor, es necesario ab
     docker login
     ```
 
-2. Se crea el tag de la imagen
+2. Construir imagen.
+
+    El comando debe de ejecutarse donde esta el Dockerfile
+
+    ```console
+    docker build -t tu_nombre_de_usuario/mi-aplicacion:version_nueva .
+    ```
+
+3. Se crea el tag de la imagen
 
     ```console
     docker tag tu_nombre_de_usuario/mi-aplicacion tu_nombre_de_usuario/mi-aplicacion:version
     ```
 
-3. Se sube la imagen
+4. Se sube la imagen
 
     ```console
     docker push tu_nombre_de_usuario/mi-aplicacion:version
