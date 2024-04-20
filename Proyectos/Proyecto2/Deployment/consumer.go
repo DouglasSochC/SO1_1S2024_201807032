@@ -34,22 +34,22 @@ func main() {
 	kafkaBrokers := os.Getenv("KAFKA_BROKERS")
 	kafkaTopic := os.Getenv("KAFKA_TOPIC")
 	redisAddr := os.Getenv("REDIS_ADDR")
-	redisPassword := os.Getenv("REDIS_PASSWORD")
 	mongoDBName := os.Getenv("MONGO_DB_NAME")
 	mongoCollectionName := os.Getenv("MONGO_COLLECTION_NAME")
 	mongoURI := fmt.Sprintf("mongodb://%s:%s@%s", os.Getenv("MONGO_USER"), os.Getenv("MONGO_PASSWORD"), os.Getenv("MONGO_HOST"))
 
 	// Cliente Redis
 	rdb := redis.NewClient(&redis.Options{
-		Addr:     redisAddr,
-		Password: redisPassword,
+		Addr: redisAddr,
 	})
 
 	// Cliente MongoDB
 	mongoClientOptions := options.Client().ApplyURI(mongoURI)
-	mongoClient, err := mongo.Connect(ctx, mongoClientOptions)
+	var err error
+	mongoClient, err = mongo.Connect(ctx, mongoClientOptions)
 	if err != nil {
-		log.Fatal("Error al conectar con MongoDB:", err)
+		log.Fatalf("Error al conectar con MongoDB: %v", err)
+		return
 	}
 	defer mongoClient.Disconnect(ctx)
 
