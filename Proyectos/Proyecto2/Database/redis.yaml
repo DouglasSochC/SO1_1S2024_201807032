@@ -20,7 +20,7 @@ spec:
         - containerPort: 6379
         env:
         - name: REDIS_PASSWORD
-          value: password
+          value: "password"
 ---
 apiVersion: v1
 kind: Service

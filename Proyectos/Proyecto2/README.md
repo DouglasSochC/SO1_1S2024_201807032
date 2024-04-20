@@ -196,6 +196,9 @@ Dado que las imágenes de cada módulo se encuentran en Docker Hub, solo necesit
 
 7. Creación del servicio y pods del deployment consumer
 
+    > Nota 1: Recuerda crear la base de datos y la colección en MongoDB
+    > Nota 2: Recuerda ajustar la variable de entorno **MONGO_HOST** con la dirección IP del servicio de MongoDB, así como la variable **REDIS_ADDR** con la dirección IP del servicio de Redis.
+
     ```console
     kubectl create -f Deployment/deployment.yaml
     ```
