@@ -16,9 +16,6 @@ El principal objetivo de este proyecto es establecer un sistema de votación par
 
 * [Comenzando](#comenzando)
     * [Requerimientos](#requerimientos)
-* [Entorno de desarrollo](#entorno-desarrollo)
-    * [Para Locust](#para-locust)
-    * [Para el Producer GRPC](#para-producer-grpc)
 * [Desplegar proyecto](#desplegar-proyecto)
 * [Documentacion](#documentacion)
 
@@ -68,93 +65,16 @@ El principal objetivo de este proyecto es establecer un sistema de votación par
     gcloud components install kubectl
     ```
 
-## ⚙️ Entorno de desarrollo <div id='entorno-desarrollo'></div>
+## 📖 Documentacion <div id='documentacion'></div>
 
-Después de haber instalado todos los requisitos del proyecto, aquí tienes una guía y un conjunto de comandos útiles que te servirán si decides trabajar en el proyecto.
+### 🎡 Arquitectura
 
-### Para Locust <div id='para-locust'></div>
 
-#### Creación de entorno virtual
 
-Se utilizara un entorno virtual para levantar Locust con el fin de aislar las dependencias, evitar conflictos entre versiones, y garantizar que Locust tenga su propio entorno reproducible.
+### Realización de graficos en Grafana
 
-Instalar el modulo **virtualenv**
-
-```console
-pip install virtualenv
-```
-
-Ahora dentro de la carpeta **Locust** se debe de realizar lo siguiente:
-
-1. Creación del entorno virtual, en este caso llama **venv**
-
-    ```console
-    virtualenv venv
-    ```
-
-2. Activar entorno virtual
-
-    ```console
-    source venv/Scripts/activate
-    ```
-
-3. Instalar las dependencias del proyecto
-
-    ```console
-    pip install -r requirements.txt
-    ```
-
-4. Ejecutar
-
-    ```console
-    locust -f traffic.py
-    ```
-
-### Para el Producer GRPC <div id='para-producer-grpc'></div>
-
-#### Generacion de compilados proto
-
-Para generar los compilados tanto del cliente como del servidor, es necesario abrir una consola en la raiz del proyecto y ejecutar los siguientes comandos. Esto permitirá generar los compilados correctamente.
-
-1. Para el cliente
-
-    ```console
-    protoc --go_out=Producers/grpc/cliente/proto/. --go-grpc_out=Producers/grpc/cliente/proto/. Producers/grpc/cliente/proto/client.proto
-    ```
-
-2. Para el servidor
-
-    ```console
-    protoc --go_out=Producers/grpc/servidor/proto/. --go-grpc_out=Producers/grpc/servidor/proto/. Producers/grpc/servidor/proto/server.proto
-    ```
-
-### Para Docker
-
-1. Se inicia sesión
-
-    ```console
-    docker login
-    ```
-
-2. Construir imagen.
-
-    El comando debe de ejecutarse donde esta el Dockerfile
-
-    ```console
-    docker build -t tu_nombre_de_usuario/mi-aplicacion:version_nueva .
-    ```
-
-3. Se crea el tag de la imagen
-
-    ```console
-    docker tag tu_nombre_de_usuario/mi-aplicacion tu_nombre_de_usuario/mi-aplicacion:version
-    ```
-
-4. Se sube la imagen
-
-    ```console
-    docker push tu_nombre_de_usuario/mi-aplicacion:version
-    ```
+### 📑 Preguntas
+abc
 
 ## 🚀 Desplegar proyecto <div id='desplegar-proyecto'></div>
 
@@ -204,7 +124,7 @@ Dado que las imágenes de cada módulo se encuentran en Docker Hub, solo necesit
     kubectl create -f Producers/grpc/grpc.yaml
     ```
 
-6. Creación del servicio y pod del producer WASM
+6. Creación del servicio y pod del producer WASM (No realizado)
 
     <!-- ```console
     ``` -->
@@ -236,12 +156,3 @@ Dado que las imágenes de cada módulo se encuentran en Docker Hub, solo necesit
     ```console
     kubectl create -f Ingress/ingress.yaml
     ```
-
-## 📖 Documentacion <div id='documentacion'></div>
-
-### 🎡 Arquitectura
-
-abc
-
-### 📑 b
-abc
