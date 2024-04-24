@@ -2,8 +2,6 @@ package main
 
 import (
 	"context"
-	"crypto/sha256"
-	"encoding/hex"
 	"encoding/json"
 	"fmt"
 	"log"
@@ -90,16 +88,14 @@ func insertMongoDB(mongoDBName string, mongoCollectionName string, data Data) {
 }
 
 func insertRedis(rdb *redis.Client, data Data) {
-	// Crear llave hash
+	// Crear llave
 	key := fmt.Sprintf("%s:%s:%s", data.Name, data.Album, data.Year)
-	hash := sha256.Sum256([]byte(key))
-	hashKey := hex.EncodeToString(hash[:])
 
 	// Incrementar contador en Redis
-	count, err := rdb.Incr(ctx, hashKey).Result()
+	count, err := rdb.Incr(ctx, key).Result()
 	if err != nil {
 		log.Fatal("Error al incrementar contador en Redis:", err)
 	}
 
-	log.Printf("Inserción en Redis, Llave: %s, Contador: %d", hashKey, count)
+	log.Printf("Inserción en Redis, Llave: %s, Contador: %d", key, count)
 }

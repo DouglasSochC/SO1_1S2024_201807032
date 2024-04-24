@@ -27,27 +27,42 @@ El principal objetivo de este proyecto es establecer un sistema de votación par
 ### 📋 Requerimientos <div id='requerimientos'></div>
 
 * [Python 3.12.0](https://www.python.org/downloads/)
-```console
-python --version
-```
+
+    Python es un lenguaje de programación de alto nivel, interpretado y de propósito general. Destacado por su legibilidad y simplicidad en la sintaxis, permite a los programadores expresar conceptos en menos líneas de código comparado con otros lenguajes. La versión 3.12.0 es la última versión estable, que incluye mejoras en las funcionalidades del lenguaje y correcciones de errores.
+
+    ```console
+    python --version
+    ```
+
 
 * [Golang 1.21.6](https://go.dev/doc/install)
-```console
-go version
-```
+
+    Go, también conocido como Golang, es un lenguaje de programación creado por Google. Es un lenguaje compilado, tipado estáticamente que facilita la construcción de software de manera eficiente y concurrente. La versión 1.21.6 incluye actualizaciones de rendimiento y seguridad, así como nuevas características para mejorar el desarrollo.
+
+    ```console
+    go version
+    ```
 
 * [GCloudCLI 471.0.0](https://cloud.google.com/sdk?hl=es-419)
-```console
-gcloud version
-```
+
+    GCloud CLI (Google Cloud Command Line Interface) es una herramienta que permite a los desarrolladores gestionar los recursos de Google Cloud Platform (GCP) desde la línea de comando. Ofrece comandos para desplegar y manejar aplicaciones, manejar almacenamiento en la nube, configurar redes, entre otros. La versión 471.0.0 trae las últimas actualizaciones y características compatibles con GCP.
+    ```console
+    gcloud version
+    ```
 
 #### Paquetes adicionales
 
 * [Protoc](https://www.geeksforgeeks.org/how-to-install-protocol-buffers-on-windows/)
 
+    Protoc es el compilador de Protocol Buffers, un sistema de serialización de datos estructurado desarrollado por Google, usado ampliamente en servicios de comunicación y almacenamiento de datos. Protoc se utiliza para generar código fuente a partir de archivos de definición .proto en varios lenguajes de programación, en este caso es utilizado para una comunicación grpc en golang.
+
 * [gRPC para Golang](https://grpc.io/docs/languages/go/quickstart/)
 
+    gRPC es un marco de trabajo moderno y de alto rendimiento para la comunicación entre servicios, que usa HTTP/2 como protocolo de transporte y Protocol Buffers como mecanismo de serialización. La versión para Golang permite a los desarrolladores de Go construir sistemas distribuidos y escalables de manera eficiente.
+
 * Kubectl
+
+    Kubectl es una herramienta de línea de comando para interactuar con clusters de Kubernetes. Permite a los usuarios desplegar aplicaciones, inspeccionar y manejar recursos del cluster, y ver logs. Es esencial para la gestión de clusters Kubernetes y es mantenido por Google como parte de su conjunto de herramientas de Google Cloud.
 
     ```console
     gcloud components install kubectl
@@ -113,7 +128,7 @@ Para generar los compilados tanto del cliente como del servidor, es necesario ab
     protoc --go_out=Producers/grpc/servidor/proto/. --go-grpc_out=Producers/grpc/servidor/proto/. Producers/grpc/servidor/proto/server.proto
     ```
 
-#### Subir imagen a Docker Hub
+### Para Docker
 
 1. Se inicia sesión
 
@@ -204,7 +219,19 @@ Dado que las imágenes de cada módulo se encuentran en Docker Hub, solo necesit
     kubectl create -f Deployment/deployment.yaml
     ```
 
-8. Creación de Ingress
+8. Creación del Horizontal Pod Autoscaler (HPA)
+
+    ```console
+    kubectl create -f Deployment/hpa-deployment.yaml
+    ```
+
+9. Implementacion de Grafana
+
+    ```console
+    kubectl create -f Grafana/grafana.yaml
+    ```
+
+10. Creación de Ingress
 
     ```console
     kubectl create -f Ingress/ingress.yaml
