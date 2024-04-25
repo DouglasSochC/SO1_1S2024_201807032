@@ -1,33 +1,2133 @@
 [
     {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "86"
+    },
+    {
         "name": "Pink Floyd",
         "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "29"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "72"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "31"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "83"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "10"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "30"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "30"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "44"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "64"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "53"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "23"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "81"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "9"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "24"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "43"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "58"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "39"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "99"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "10"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "74"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
         "year": "1973",
         "rank": "94"
     },
     {
         "name": "Pink Floyd",
         "album": "Wish You Were Here",
-        "year": "1975",
-        "rank": "93"
+        "year": "1973",
+        "rank": "13"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "60"
     },
     {
         "name": "Pink Floyd",
-        "album": "The Wall",
-        "year": "1979",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "85"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "88"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "60"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "43"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "60"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "9"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
         "rank": "92"
     },
     {
         "name": "Pink Floyd",
-        "album": "Animals",
-        "year": "1977",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "28"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "56"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "80"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "87"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "14"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "34"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "31"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "17"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "85"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "10"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "25"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "96"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "28"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "52"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "98"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "11"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "42"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "88"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "72"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "63"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "37"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "87"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "77"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "26"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "74"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "61"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "57"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "74"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "51"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "73"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "71"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "41"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "67"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "40"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "25"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "74"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "87"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "42"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "31"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "54"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "82"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "8"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "68"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "97"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "33"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "2"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "5"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "91"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "13"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "30"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "67"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "24"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "61"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "88"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "35"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "45"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "32"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "33"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "72"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "52"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "76"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "67"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "9"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "46"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "20"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "4"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "4"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "89"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "2"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "23"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "20"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "3"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "11"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "78"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "21"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "1"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "48"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "55"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "15"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "34"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "44"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "20"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "12"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "52"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "60"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "63"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "7"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "57"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "32"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "8"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "87"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "57"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "42"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "50"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "2"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "44"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "76"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "61"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "56"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "12"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "28"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "92"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "76"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "21"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "49"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "77"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "37"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "44"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "13"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "92"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "37"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "83"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "17"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "45"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "75"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "95"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "98"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "55"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "45"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "4"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "57"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "35"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "24"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "9"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "78"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "59"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "88"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "42"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "89"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "74"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "74"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "95"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "35"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "13"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "2"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "61"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "27"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "39"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "8"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "13"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "55"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "59"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "27"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "82"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "76"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "72"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "5"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "59"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "63"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "65"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "36"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "58"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "55"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "81"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "73"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "34"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "75"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "9"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "44"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "4"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "37"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "25"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "75"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "41"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "99"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "58"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "71"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "34"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "68"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "49"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "9"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "68"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "97"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "4"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "80"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "75"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "76"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "30"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "93"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "23"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "91"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "84"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "33"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "73"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "30"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "11"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "74"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "23"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "2"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "13"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "36"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "55"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "12"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "10"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "28"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "6"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "24"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "8"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "81"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "3"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "36"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "5"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "89"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "66"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "83"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "20"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "29"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "72"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "93"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "86"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "79"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "86"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "30"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "75"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "69"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "28"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "62"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "69"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "61"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "87"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "96"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "30"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "59"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "90"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "8"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "3"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "9"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "85"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "90"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "40"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "83"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "29"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "65"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "40"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "70"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "23"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "34"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "71"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
         "rank": "91"
     },
     {
         "name": "Pink Floyd",
-        "album": "Meddle",
-        "year": "1971",
-        "rank": "90"
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "43"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "44"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "74"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "84"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "47"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "85"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "41"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "98"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "19"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "67"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "28"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "11"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "46"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "20"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "10"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "28"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "45"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "81"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "35"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "34"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "6"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "85"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "62"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "15"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "18"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "42"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "67"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "12"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "13"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "15"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "36"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "53"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "92"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "49"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "66"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "38"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "16"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "40"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "58"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "93"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "63"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "61"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "20"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "24"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "55"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "77"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "70"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "27"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "50"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "48"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "77"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "63"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "75"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "97"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "4"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "83"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "54"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "44"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "17"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "76"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "70"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "46"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "78"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "71"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "26"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "69"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "3"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "95"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "2"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "26"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "62"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "3"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "93"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "87"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "83"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "36"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "30"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "75"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "16"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "42"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "58"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "78"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "30"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "56"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "6"
     },
     {
         "name": "The Beatles",
@@ -36,27 +2136,3867 @@
         "rank": "98"
     },
     {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "50"
+    },
+    {
         "name": "The Beatles",
-        "album": "Revolver",
-        "year": "1966",
-        "rank": "97"
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "62"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "50"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "71"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "24"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "56"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "41"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "84"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "65"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "60"
     },
     {
         "name": "The Beatles",
         "album": "Abbey Road",
-        "year": "1969",
+        "year": "1967",
+        "rank": "5"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "87"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "43"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "99"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "45"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "81"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "13"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "23"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "25"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "57"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "21"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "100"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "36"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "18"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "44"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "95"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "12"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "36"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "59"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "11"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "80"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "15"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "45"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "67"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "41"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "26"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "97"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "80"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "76"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "57"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "22"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "54"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "13"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "14"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "35"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "34"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "6"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "86"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "92"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "95"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "60"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "26"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "13"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "5"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "32"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "64"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "43"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "46"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "100"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "61"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "22"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "34"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "3"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "69"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "62"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "8"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "51"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "23"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "22"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "44"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "58"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "52"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "61"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "11"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "8"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "49"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "23"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "50"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "46"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "49"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "91"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "27"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "58"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "93"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "60"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "59"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "98"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "64"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "41"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "30"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "78"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "91"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "91"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "79"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "68"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "84"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "56"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "11"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "75"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "65"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "36"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "24"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "99"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "83"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "12"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "12"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "34"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "81"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "58"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "75"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "86"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "84"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "49"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "48"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "27"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "11"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "14"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "22"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "53"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "88"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "54"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "75"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "45"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "2"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
         "rank": "96"
     },
     {
         "name": "The Beatles",
-        "album": "Rubber Soul",
-        "year": "1965",
-        "rank": "95"
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "22"
     },
     {
         "name": "The Beatles",
-        "album": "The Beatles (White Album)",
-        "year": "1968",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "50"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "4"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "10"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "31"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "91"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "88"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "65"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "7"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "11"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "59"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "27"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "55"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "90"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "87"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "38"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "44"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "87"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "83"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "25"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "8"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "20"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "34"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "26"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "84"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "63"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "84"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "47"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "31"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "79"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "21"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "6"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "67"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "28"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "41"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "93"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "10"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "29"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "77"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "49"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "72"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "86"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "67"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "28"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "42"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "92"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "46"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "57"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "79"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "85"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "32"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "10"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "27"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "64"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "9"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "38"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "48"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "50"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "85"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "38"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "88"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "80"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "28"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "22"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "65"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "9"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "77"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "34"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "83"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "35"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "1"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "77"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "88"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "19"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "17"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "18"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "56"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "80"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "98"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "85"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "97"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "72"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "49"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "73"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "41"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "79"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "68"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "10"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "34"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "35"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "98"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "45"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "2"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "95"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "96"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "87"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "64"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "25"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "76"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "64"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "95"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "56"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "56"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "55"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "64"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "15"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "59"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "70"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "17"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "29"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "23"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "52"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "64"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "39"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "20"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "40"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "21"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "78"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "75"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "18"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "29"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "88"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "98"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "73"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "25"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
         "rank": "94"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "38"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "53"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "52"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "24"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "54"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "68"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "53"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "15"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "51"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "10"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "11"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "53"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "89"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "84"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "61"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "81"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "1"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "72"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "83"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "5"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "61"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "28"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "36"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "65"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "74"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "12"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "58"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "33"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "69"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "20"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "4"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "88"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "75"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "75"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "80"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "77"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "12"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "75"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "28"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "7"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "35"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "28"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "67"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "9"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "60"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "24"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "41"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "72"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "49"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "39"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "71"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "44"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "82"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "50"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "74"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "91"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "20"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "95"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "46"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "29"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "39"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "27"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "64"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "44"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "29"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "44"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "37"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "22"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "78"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "17"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "66"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "34"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "66"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "53"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "42"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "86"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "79"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "43"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "18"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "27"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "84"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "56"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "79"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "68"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "83"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "7"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "56"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "72"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "17"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "76"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "8"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "40"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "35"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "71"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "30"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "12"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "59"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "2"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "99"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "28"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "34"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "62"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "14"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "54"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "14"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "11"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "91"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "95"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "26"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "99"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "35"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "55"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "3"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "78"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "21"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "83"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "80"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "64"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "36"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "49"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "68"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "21"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "95"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "67"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "85"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "80"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "55"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "20"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "30"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "20"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "75"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "84"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "92"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "80"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "23"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "91"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "46"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "77"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "9"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "60"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "47"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "100"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "7"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "57"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "85"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "20"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "4"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "64"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "53"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "28"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "72"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "4"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "61"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "84"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "63"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "38"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "43"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "27"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "26"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "22"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "21"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "44"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "87"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "43"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "9"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "70"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "36"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "44"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "49"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "6"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "12"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "23"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "49"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "26"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "37"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "26"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "47"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "21"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "80"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "97"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "62"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "26"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "48"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "34"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "43"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "27"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "24"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "92"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "57"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "20"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "73"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "78"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "34"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "9"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "57"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "41"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "78"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "97"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "71"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "33"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "27"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "77"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "38"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "36"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "51"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "33"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "30"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "67"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "78"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "41"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "12"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "79"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "68"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "38"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "57"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "77"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "75"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "47"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "32"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "93"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "97"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "19"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "12"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "43"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "76"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "35"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "74"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "41"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "80"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "84"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "25"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "2"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "24"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "30"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "76"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "13"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "16"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "77"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "51"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "35"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "79"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "16"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "14"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "58"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "6"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "78"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "53"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "47"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "2"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "3"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "98"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "39"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "41"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "89"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "44"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "6"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "24"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "63"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "85"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "4"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "82"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "82"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "14"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "90"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "54"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "41"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "28"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "39"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "79"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "91"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "81"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "76"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "100"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "57"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "12"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "94"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "4"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "44"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "77"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "74"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "57"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "70"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "11"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "34"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "94"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "86"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "90"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "82"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "74"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "62"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "7"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "25"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "6"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "19"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "34"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "70"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "56"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "59"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "84"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "67"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "36"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "99"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "9"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "13"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "25"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "30"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "45"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "37"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "89"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "92"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "46"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "54"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "18"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "91"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "36"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "8"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "29"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "86"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "80"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "51"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "50"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "7"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "61"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "96"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "83"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "5"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "24"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "99"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "49"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "54"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "18"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "57"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "91"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "8"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "68"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "44"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "32"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "50"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "47"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "41"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "6"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "62"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "83"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "1"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "2"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "49"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "56"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "92"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "8"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "99"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "56"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "92"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "59"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "81"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "16"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "37"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "34"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "71"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "80"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "13"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "14"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "54"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "39"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "55"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "94"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "17"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "24"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "84"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "57"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "50"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "71"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "69"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "90"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Abbey Road",
+        "year": "1967",
+        "rank": "79"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "2"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "32"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "58"
+    },
+    {
+        "name": "David Bowie",
+        "album": "The Rise and Fall",
+        "year": "1972",
+        "rank": "52"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "43"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "The Dark Side of the Moon",
+        "year": "1973",
+        "rank": "89"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "70"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "6"
+    },
+    {
+        "name": "Madonna",
+        "album": "Ray of Light",
+        "year": "1984",
+        "rank": "87"
+    },
+    {
+        "name": "Madonna",
+        "album": "Like a Virgin",
+        "year": "1984",
+        "rank": "56"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "96"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "7"
+    },
+    {
+        "name": "The Beatles",
+        "album": "Sgt. Pepper's Lonely Hearts Club Band",
+        "year": "1967",
+        "rank": "24"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "47"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "42"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "70"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "82"
+    },
+    {
+        "name": "Pink Floyd",
+        "album": "Wish You Were Here",
+        "year": "1973",
+        "rank": "33"
+    },
+    {
+        "name": "David Bowie",
+        "album": "Blackstar",
+        "year": "1972",
+        "rank": "65"
     }
 ]
