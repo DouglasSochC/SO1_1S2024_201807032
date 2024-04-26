@@ -21,6 +21,7 @@ El principal objetivo de este proyecto es establecer un sistema de votación par
     * [Graficos en Grafana](#graficos-grafana)
     * [Funcionamiento del proyecto](#funcionamiento-proyecto)
     * [Preguntas](#preguntas)
+    * [Conclusiones](#conclusiones)
     * [Desplegar proyecto](#desplegar-proyecto)
 
 ## ⭐ Comenzando <div id='comenzando'></div>
@@ -195,6 +196,18 @@ El rendimiento de un sistema depende del contexto específico del análisis. Por
 * _Portabilidad de código existente_: Si quieres llevar una aplicación existente, escrita en un lenguaje como C, C++ o Rust, al navegador sin reescribir completamente el código, Wasm es una excelente opción.
 
 * _Código seguro y sandboxed en el navegador_: Cuando la seguridad es una preocupación, Wasm ejecuta el código en un entorno aislado, lo que proporciona un nivel adicional de seguridad frente a la ejecución de scripts tradicionales.
+
+### 📑 Conclusiones <div id='conclusiones'></div>
+
+* Se está utilizando Kubernetes para gestionar los contenedores, lo que permite un despliegue, escalado y gestión automatizados de aplicaciones contenerizadas.
+
+* Hay un componente Ingress en la parte superior de la arquitectura, que es utilizado para manejar el acceso externo a los servicios en el clúster de Kubernetes, proporcionando balanceo de carga, SSL y reglas de enrutamiento.
+
+* Los servicios etiquetados como Servicio GRPC y Servicio Wasm indican que se están utilizando dos tipos de servicios, posiblemente con diferentes tecnologías o protocolos de comunicación. Cada servicio parece ejecutarse en su propio conjunto de pods, que son las unidades más pequeñas desplegables que se pueden crear y administrar en Kubernetes.
+
+* La arquitectura está diseñada alrededor de microservicios, lo cual es evidente por los diferentes servicios desplegados.
+
+* Se está utilizando Apache Kafka como sistema de mensajería para manejar el flujo de datos entre diferentes componentes, favoreciendo la desacoplamiento, la escalabilidad y la capacidad de manejo de grandes volúmenes de datos.
 
 ### 🚀 Desplegar proyecto <div id='desplegar-proyecto'></div>
 
